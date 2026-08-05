@@ -1,0 +1,76 @@
+{
+  "schema": "moon.ps1.kr_patch.release_manifest.v1",
+  "release": {
+    "version": "1.0",
+    "date": "2026-08-06",
+    "status": "release_ready",
+    "repository": "https://github.com/enthhende/moon-remix-rpg-adventure-korean-patch",
+    "distribution": "forward_delta_only"
+  },
+  "game": {
+    "title": "moon: Remix RPG Adventure",
+    "platform": "PlayStation",
+    "region": "Japan",
+    "supported_revision": "Rev 1"
+  },
+  "supported_input": {
+    "bin": {
+      "filename": "Moon - Remix RPG Adventure (Japan) (Rev 1).bin",
+      "size": 640491936,
+      "sha256": "828189dd7cba0211585c9e06a99936924f0fb883da428525f1fc73790fb403f2"
+    },
+    "cue": {
+      "filename": "Moon - Remix RPG Adventure (Japan) (Rev 1).cue",
+      "size": 108,
+      "sha256": "031a35316b96460c474e3a6a99bd2dfb98e6408dedd8ceadffc49faf20d77482"
+    },
+    "track_layout": [
+      {
+        "number": 1,
+        "mode": "MODE2/2352",
+        "index_01": "00:00:00"
+      }
+    ]
+  },
+  "output": {
+    "bin": {
+      "filename": "Moon - Remix RPG Adventure (Japan) (Rev 1).bin",
+      "size": 640491936,
+      "sha256": "70a8a7d27ff38e0dba186fd88e9040d44c06221086d7d44dba633b6deeb661b3"
+    },
+    "cue": {
+      "filename": "Moon - Remix RPG Adventure (Japan) (Rev 1).cue",
+      "size": 108,
+      "sha256": "031a35316b96460c474e3a6a99bd2dfb98e6408dedd8ceadffc49faf20d77482"
+    }
+  },
+  "patch": {
+    "filename": "moon_ps1_kr_v1.0_rev1_70a8a7d2.xdelta",
+    "format": "VCDIFF/xdelta3",
+    "encoder": "xdelta3 3.1.0",
+    "encoder_options": "-e -9 -S djw",
+    "application_header": "moon-ps1-kr-v1.0-rev1-to-70a8a7d2",
+    "size": 277452,
+    "sha256": "1c4c54c63e944ed0b5baabc0d8bc759568e2d7ab400554945b16f81e0257de10"
+  },
+  "verification": {
+    "deterministic_patch_rebuild": true,
+    "clean_apply_matches_output": true,
+    "internal_reverse_restore_matches_input": true,
+    "reverse_patch_distributed": false,
+    "mode2_form1_edc_ecc": "pass",
+    "unowned_changed_bytes": 0
+  },
+  "compatibility": {
+    "emulator": "verified on Mednafen PSX build 013d057",
+    "real_hardware": "not verified",
+    "psp_eboot_pbp": "not verified",
+    "other_emulators": "not verified",
+    "ordinary_memory_card": "compatible",
+    "cross_build_savestate": "unsupported"
+  },
+  "licensing": {
+    "status": "approved",
+    "scope": "MIT for original tools and documentation; separate notice for translation/patch; preserve OFL-1.1 notices"
+  }
+}

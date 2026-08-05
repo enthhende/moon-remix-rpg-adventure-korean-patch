@@ -1,0 +1,29 @@
+# Generated release files
+dist/
+release-assets/
+*.zip
+*.xdelta
+*.vcdiff
+SHA256SUMS.txt
+
+# Game/disc images and runtime state
+*.bin
+*.cue
+*.iso
+*.img
+*.ccd
+*.sub
+*.chd
+*.pbp
+*.mcr
+*.mcd
+*.sav
+*.srm
+*.state
+
+# Python/editor/OS output
+__pycache__/
+*.pyc
+.DS_Store
+._*
+.venv/

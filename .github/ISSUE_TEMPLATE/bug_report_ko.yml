@@ -1,0 +1,61 @@
+name: 한국어 패치 오류·호환성 제보
+description: 크래시, 표시 문제, PSP/에뮬레이터/실기 호환성을 제보합니다.
+title: "[v1.0] "
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        원본·패치된 게임 이미지, BIOS, 메모리카드 전체 덤프와 savestate는 첨부하지 마세요.
+  - type: input
+    id: output_sha
+    attributes:
+      label: 패치 직후 BIN SHA-256
+      description: EBOOT.PBP 변환 전 verify_image.py 결과를 권장합니다.
+      placeholder: 70a8a7d27ff38e0dba186fd88e9040d44c06221086d7d44dba633b6deeb661b3
+    validations:
+      required: true
+  - type: dropdown
+    id: environment
+    attributes:
+      label: 실행 환경
+      options:
+        - PS1 에뮬레이터
+        - PSP POPS / EBOOT.PBP
+        - 실제 PlayStation 본체
+        - 기타
+    validations:
+      required: true
+  - type: input
+    id: runtime
+    attributes:
+      label: 기기·에뮬레이터·펌웨어/변환 도구와 버전
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: 재현 순서
+      description: 장소, 이벤트, 직전 행동과 반복 재현 여부를 적어 주세요.
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: 실제 결과
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: 기대 결과
+    validations:
+      required: true
+  - type: checkboxes
+    id: legal
+    attributes:
+      label: 첨부물 확인
+      options:
+        - label: 원본·패치된 게임 이미지, BIOS, 메모리카드 덤프 또는 savestate를 첨부하지 않았습니다.
+          required: true
