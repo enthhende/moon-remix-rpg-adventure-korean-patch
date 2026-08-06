@@ -8,6 +8,7 @@
 | 이 저장소가 새로 작성한 적용·검증 도구와 설명 문서 | 루트 `LICENSE`의 MIT License |
 | 한국어 번역 데이터와 xdelta 패치 | `LICENSES/PATCH-AND-TRANSLATION-NOTICE.md`; MIT 대상 아님 |
 | Galmuri·D2 Coding 유래 글리프 | SIL Open Font License 1.1 및 원저작자 고지 유지 |
+| Windows Portable에 동봉된 xdelta3 3.2.0 | Apache License 2.0; `LICENSES/XDELTA3-Apache-2.0.txt` |
 | 원작 게임 자료 | 이 프로젝트가 권리를 부여하지 않음 |
 
 공개 GitHub 저장소를 열람·포크할 수 있다는 사실이 원작 자료나 패치에 대한

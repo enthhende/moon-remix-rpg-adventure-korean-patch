@@ -19,8 +19,18 @@ Rev 1 BIN/CUE를 다시 준비해야 합니다.
 
 ## `xdelta3를 찾을 수 없습니다`라고 나옵니다
 
-xdelta3 3.1.0 실행 파일을 패치 폴더, `tools` 하위 폴더 또는 PATH에
-놓으세요. Windows에서는 실행 파일 이름이 `xdelta3.exe`인지 확인하세요.
+Windows라면 `Moon_PS1_Korean_Patch_v1.0_Windows_Portable.zip`을 다시
+받아 완전히 압축 해제하세요. 그 패키지에는 검증된 `xdelta3.exe`가 이미
+들어 있으며 Python도 필요하지 않습니다. 백신이 파일을 격리했는지도
+확인하세요.
+
+macOS/Linux용 일반 패키지는 공식 xdelta3 3.2.0 실행 파일을 패치 폴더,
+`tools` 하위 폴더 또는 PATH에 놓으세요.
+
+## Windows에서 Python을 설치하라고 나옵니다
+
+기존 일반 패키지의 배치 파일을 실행한 경우입니다. Releases에서 이름에
+`Windows_Portable`이 들어간 ZIP을 받아 그 안의 배치 파일을 실행하세요.
 
 ## 에뮬레이터에서 BIN과 CUE 중 무엇을 열어야 하나요?
 

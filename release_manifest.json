@@ -61,6 +61,22 @@
     "mode2_form1_edc_ecc": "pass",
     "unowned_changed_bytes": 0
   },
+  "windows_portable": {
+    "runtime": "Windows 10/11 x86-64 with Windows PowerShell 5.1 or newer",
+    "python_required": false,
+    "xdelta": {
+      "version": "3.2.0",
+      "license": "Apache-2.0",
+      "source": "https://github.com/jmacd/xdelta/releases/tag/v3.2.0",
+      "archive_filename": "xdelta3-3.2.0-windows-x86_64.zip",
+      "archive_size": 184374,
+      "archive_sha256": "af8ef036cb077a48df080c9a8ac1be4a6e7511c32d11f8bec89b6803a9e52576",
+      "archive_member": "xdelta3-3.2.0-windows-x86_64/xdelta3.exe",
+      "exe_filename": "xdelta3.exe",
+      "exe_size": 336896,
+      "exe_sha256": "53d90226615f217d3380c39892833311b4e24acd863e1ca01f14b5e772e2e6d0"
+    }
+  },
   "compatibility": {
     "emulator": "verified on Mednafen PSX build 013d057",
     "real_hardware": "not verified",
@@ -71,6 +87,6 @@
   },
   "licensing": {
     "status": "approved",
-    "scope": "MIT for original tools and documentation; separate notice for translation/patch; preserve OFL-1.1 notices"
+    "scope": "MIT for original tools and documentation; separate notice for translation/patch; preserve OFL-1.1 notices; Apache-2.0 for bundled xdelta3"
   }
 }

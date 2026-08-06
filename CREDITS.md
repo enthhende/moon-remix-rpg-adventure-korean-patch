@@ -25,9 +25,14 @@ v1.0 패치에는 Moon의 고정 비트맵 규격에 맞게 변환·조정된 �
 
 ## 도구
 
-- xdelta3 3.1.0: <https://github.com/jmacd/xdelta-gpl>
+- xdelta3 3.1.0: v1.0 VCDIFF 패치 생성
+- xdelta3 3.2.0: Windows Portable 적용기
+- 공식 프로젝트: <https://github.com/jmacd/xdelta>
+- 라이선스: Apache License 2.0
 
-xdelta3 실행 파일은 이 프로젝트의 릴리스에 동봉하지 않습니다.
+Windows Portable에는 공식 xdelta3 3.2.0 Windows x64 실행 파일을
+변경 없이 동봉합니다. 출처와 체크섬은 `LICENSES/XDELTA3-NOTICE.md`에,
+라이선스 전문은 `LICENSES/XDELTA3-Apache-2.0.txt`에 보존합니다.
 
 ## 원작
 

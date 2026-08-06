@@ -1,5 +1,12 @@
 # 변경 내역
 
+## v1.0 Windows Portable 배포 갱신 — 2026-08-06
+
+- Windows 10/11 64비트용 Python 불필요 Portable 패키지 추가
+- 공식 xdelta3 3.2.0 Windows x64 바이너리와 Apache-2.0 고지 동봉
+- 원본·패치·적용 결과뿐 아니라 동봉 xdelta 실행 파일도 SHA-256 검사
+- 기존 v1.0 xdelta 패치 데이터와 완성 BIN SHA-256은 변경 없음
+
 ## v1.0 — 2026-08-06
 
 - PlayStation 일본판 Rev 1 본편 한국어 번역

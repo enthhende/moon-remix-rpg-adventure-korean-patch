@@ -26,6 +26,7 @@ BASE_FILES = (
     "README.md",
     "apply_patch.py",
     "apply_patch_windows.bat",
+    "apply_patch_windows.ps1",
     "apply_patch_macos.command",
     "apply_patch_linux.sh",
     "verify_image.py",

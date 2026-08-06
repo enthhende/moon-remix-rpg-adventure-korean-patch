@@ -4,6 +4,9 @@
   적용되는 SIL Open Font License 1.1 전문
 - `PATCH-AND-TRANSLATION-NOTICE.md`: xdelta 패치와 한국어 번역 데이터의
   개인 이용 및 재배포 조건
+- `XDELTA3-Apache-2.0.txt`: Windows Portable에 동봉된 xdelta3 3.2.0의
+  Apache License 2.0 전문
+- `XDELTA3-NOTICE.md`: 동봉 바이너리의 공식 출처·버전·SHA-256 고지
 
 원저작자와 upstream 링크는 루트의 `CREDITS.md`에서 확인할 수 있습니다.
 프로젝트가 새로 작성한 코드·문서와 한국어 패치 데이터의 범위는

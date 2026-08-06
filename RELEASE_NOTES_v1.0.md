@@ -5,9 +5,15 @@ PlayStation 일본판 `moon: Remix RPG Adventure` Rev 1용 비공식 한국어
 
 ## 받는 파일
 
-`Moon_PS1_Korean_Patch_v1.0.zip`
+- Windows 10/11 64비트 권장:
+  `Moon_PS1_Korean_Patch_v1.0_Windows_Portable.zip`
+  (Python/xdelta 별도 설치 불필요)
+- macOS/Linux 및 고급 사용자: `Moon_PS1_Korean_Patch_v1.0.zip`
+- 수동 적용: `moon_ps1_kr_v1.0_rev1_70a8a7d2.xdelta`
 
-저장소의 자동 생성 `Source code` ZIP이 아니라 위 릴리스 파일을 받으세요.
+저장소의 자동 생성 `Source code` ZIP이 아니라 위 릴리스 파일 중 하나를
+받으세요. Windows Portable은 공식 xdelta3 3.2.0 Windows x64 바이너리와
+라이선스를 포함하며, 실행 전 바이너리 자체도 SHA-256으로 검사합니다.
 
 ## 적용 대상
 

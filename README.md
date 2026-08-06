@@ -13,22 +13,29 @@ BIN/CUE가 필요합니다.
 
 GitHub 사용에 익숙하지 않다면 저장소의 초록색 `Code` 버튼이 아니라
 [Releases](https://github.com/enthhende/moon-remix-rpg-adventure-korean-patch/releases/latest)에서
-`Moon_PS1_Korean_Patch_v1.0.zip`을 받으세요.
+운영체제에 맞는 파일을 받으세요.
+
+- Windows 10/11 64비트: `Moon_PS1_Korean_Patch_v1.0_Windows_Portable.zip`
+  (권장, Python이나 xdelta 별도 설치 불필요)
+- macOS/Linux 또는 고급 사용자: `Moon_PS1_Korean_Patch_v1.0.zip`
+- 직접 명령행으로 적용할 사용자: 단독 `.xdelta` 파일
 
 압축을 푼 뒤 `README_FIRST_KO.txt` 또는 [한국어 설치 안내](docs/INSTALL_KO.md)를
 따르면 됩니다.
 
 ## 빠른 적용
 
-필요한 것:
+Windows 권장 패키지에 필요한 것:
 
 - 합법적으로 준비한 일본판 Rev 1 BIN/CUE
-- Python 3
-- xdelta3 3.1.0 실행 파일
-- 이 프로젝트의 v1.0 Release 압축 파일
+- `Moon_PS1_Korean_Patch_v1.0_Windows_Portable.zip`
 
-Windows에서는 `apply_patch_windows.bat`, macOS에서는
-`apply_patch_macos.command`, Linux에서는 `apply_patch_linux.sh`를 실행합니다.
+압축을 완전히 푼 뒤 `apply_patch_windows.bat`을 실행합니다. Portable
+패키지에는 검증된 xdelta3가 동봉되어 Python을 설치할 필요가 없습니다.
+
+macOS에서는 일반 패키지의 `apply_patch_macos.command`, Linux에서는
+`apply_patch_linux.sh`를 실행합니다. 이 두 환경의 일반 패키지는 Python 3와
+xdelta3 3.2.0을 별도로 사용합니다.
 적용기는 입력 파일의 크기와 SHA-256을 먼저 검사하고, 다른 리비전이나
 이미 패치된 파일이면 쓰기 전에 중단합니다.
 
