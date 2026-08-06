@@ -58,9 +58,9 @@ xdelta3 3.2.0을 별도로 사용합니다.
 
 - Mednafen PSX 빌드 `013d057`: 장편 자연 플레이와 진엔딩까지 검증
 - 일반 메모리카드 저장: 호환 확인
-- 실제 PlayStation 본체: 미검증
+- 실제 PlayStation 본체: 구동 확인
 - PSP POPS용 EBOOT.PBP 변환: 미검증
-- 그 밖의 PS1 에뮬레이터: 미검증
+- 그 밖의 PS1 에뮬레이터: Duckstation 호환 확인 
 - 서로 다른 패치 BIN에서 만든 에뮬레이터 savestate: 지원하지 않음
 
 PSP나 다른 에뮬레이터로 옮길 때는 먼저 패치 직후 BIN이 위의
