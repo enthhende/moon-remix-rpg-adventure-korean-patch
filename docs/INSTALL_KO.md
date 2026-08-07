@@ -3,21 +3,21 @@
 ## 1. Windows 10/11 64비트 권장 방법
 
 - `moon: Remix RPG Adventure` PlayStation 일본판 Rev 1의 BIN/CUE
-- GitHub Releases의 `Moon_PS1_Korean_Patch_v1.0_Windows_Portable.zip`
+- GitHub Releases의 `Moon_PS1_Korean_Patch_v1.1_Windows_Portable.zip`
 
 Portable 패키지를 완전히 푼 뒤 `apply_patch_windows.bat`을 실행합니다.
 Python이나 xdelta를 따로 설치할 필요가 없습니다. 동봉된 공식 xdelta3
 3.2.0 Windows x64 바이너리는 실행 전에 크기와 SHA-256이 검사됩니다.
 
 원본 BIN과 CUE 경로를 차례로 요청하면 파일을 창에 끌어 놓고 Enter를
-누릅니다. 성공하면 원본 옆의 `Moon_Korean_v1.0` 폴더가 만들어집니다.
+누릅니다. 성공하면 원본 옆의 `Moon_Korean_v1.1` 폴더가 만들어집니다.
 
 ## 2. macOS/Linux 및 고급 사용자 준비물
 
 - `moon: Remix RPG Adventure` PlayStation 일본판 Rev 1의 BIN/CUE
 - [Python 3](https://www.python.org/downloads/)
 - [xdelta3 3.2.0](https://github.com/jmacd/xdelta/releases/tag/v3.2.0)
-- GitHub Releases의 `Moon_PS1_Korean_Patch_v1.0.zip`
+- GitHub Releases의 `Moon_PS1_Korean_Patch_v1.1.zip`
 
 이 패치는 다른 리비전, ISO 변환본, CHD, PBP 또는 이미 수정된 BIN에는
 직접 적용할 수 없습니다. 먼저 정확한 Rev 1 BIN/CUE를 준비해야 합니다.
@@ -92,7 +92,7 @@ python3 apply_patch.py
 python3 apply_patch.py \
   --bin "/경로/Moon - Remix RPG Adventure (Japan) (Rev 1).bin" \
   --cue "/경로/Moon - Remix RPG Adventure (Japan) (Rev 1).cue" \
-  --output-dir "/경로/Moon_Korean_v1.0"
+  --output-dir "/경로/Moon_Korean_v1.1"
 ```
 
 적용기는 다음 순서로 동작합니다.
@@ -112,7 +112,7 @@ python3 apply_patch.py \
 완성 폴더 안에는 같은 이름의 BIN/CUE가 있습니다.
 
 - 완성 BIN SHA-256:
-  `70a8a7d27ff38e0dba186fd88e9040d44c06221086d7d44dba633b6deeb661b3`
+  `4dcea06e752afabab4d525903815fc21f681718e1ff59952ff95da6f2992fb9c`
 - 완성 CUE SHA-256:
   `031a35316b96460c474e3a6a99bd2dfb98e6408dedd8ceadffc49faf20d77482`
 
@@ -120,12 +120,12 @@ python3 apply_patch.py \
 
 ## 8. PSP EBOOT.PBP로 변환하려는 경우
 
-먼저 BIN/CUE 단계에서 한국어 패치 적용과 `70a8…61b3` 검증을 모두
+먼저 BIN/CUE 단계에서 한국어 패치 적용과 `4dce…fb9c` 검증을 모두
 끝냅니다. 그다음 이용자가 선택한 변환 도구로 패치된 BIN/CUE를
 EBOOT.PBP로 변환하세요.
 
 PBP는 별도 컨테이너이므로 변환 뒤 SHA-256이 위 BIN 값과 다른 것이
-정상입니다. v1.0에서는 PSP POPS/EBOOT.PBP가 아직 공식 검증 범위가
+정상입니다. v1.1에서는 PSP POPS/EBOOT.PBP가 아직 공식 검증 범위가
 아니므로, 성공·실패 보고 시 PSP 모델, 펌웨어/POPS 환경, 변환 도구와
 설정을 함께 적어 주세요.
 

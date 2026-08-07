@@ -7,7 +7,7 @@ PlayStation 일본판 `moon: Remix RPG Adventure` Rev 1을 대상으로 하는
 않습니다. 패치를 사용하려면 이용자가 직접 준비한 정확한 일본판 Rev 1
 BIN/CUE가 필요합니다.
 
-> 현재 호환성 표기: **에뮬레이션 검증 완료 / 실기 미검증**
+> 현재 호환성 표기: **Mednafen·DuckStation 검증 / PS2 POPS 실기 확인**
 
 ## 다운로드
 
@@ -15,9 +15,9 @@ GitHub 사용에 익숙하지 않다면 저장소의 초록색 `Code` 버튼이 
 [Releases](https://github.com/enthhende/moon-remix-rpg-adventure-korean-patch/releases/latest)에서
 운영체제에 맞는 파일을 받으세요.
 
-- Windows 10/11 64비트: `Moon_PS1_Korean_Patch_v1.0_Windows_Portable.zip`
+- Windows 10/11 64비트: `Moon_PS1_Korean_Patch_v1.1_Windows_Portable.zip`
   (권장, Python이나 xdelta 별도 설치 불필요)
-- macOS/Linux 또는 고급 사용자: `Moon_PS1_Korean_Patch_v1.0.zip`
+- macOS/Linux 또는 고급 사용자: `Moon_PS1_Korean_Patch_v1.1.zip`
 - 직접 명령행으로 적용할 사용자: 단독 `.xdelta` 파일
 
 압축을 푼 뒤 `README_FIRST_KO.txt` 또는 [한국어 설치 안내](docs/INSTALL_KO.md)를
@@ -28,7 +28,7 @@ GitHub 사용에 익숙하지 않다면 저장소의 초록색 `Code` 버튼이 
 Windows 권장 패키지에 필요한 것:
 
 - 합법적으로 준비한 일본판 Rev 1 BIN/CUE
-- `Moon_PS1_Korean_Patch_v1.0_Windows_Portable.zip`
+- `Moon_PS1_Korean_Patch_v1.1_Windows_Portable.zip`
 
 압축을 완전히 푼 뒤 `apply_patch_windows.bat`을 실행합니다. Portable
 패키지에는 검증된 xdelta3가 동봉되어 Python을 설치할 필요가 없습니다.
@@ -39,7 +39,7 @@ xdelta3 3.2.0을 별도로 사용합니다.
 적용기는 입력 파일의 크기와 SHA-256을 먼저 검사하고, 다른 리비전이나
 이미 패치된 파일이면 쓰기 전에 중단합니다.
 
-성공하면 별도 `Moon_Korean_v1.0` 폴더에 BIN/CUE가 만들어집니다. 원본은
+성공하면 별도 `Moon_Korean_v1.1` 폴더에 BIN/CUE가 만들어집니다. 원본은
 수정하거나 덮어쓰지 않습니다. 에뮬레이터에서는 새 폴더의 CUE 파일을
 여세요.
 
@@ -48,7 +48,7 @@ xdelta3 3.2.0을 별도로 사용합니다.
 | 구분 | 크기 | SHA-256 |
 |---|---:|---|
 | 지원 원본 Rev 1 BIN | 640,491,936 bytes | `828189dd7cba0211585c9e06a99936924f0fb883da428525f1fc73790fb403f2` |
-| 한국어 패치 v1.0 BIN | 640,491,936 bytes | `70a8a7d27ff38e0dba186fd88e9040d44c06221086d7d44dba633b6deeb661b3` |
+| 한국어 패치 v1.1 BIN | 640,491,936 bytes | `4dcea06e752afabab4d525903815fc21f681718e1ff59952ff95da6f2992fb9c` |
 | 원본·결과 CUE | 108 bytes | `031a35316b96460c474e3a6a99bd2dfb98e6408dedd8ceadffc49faf20d77482` |
 
 트랙 구조는 단일 `TRACK 01 MODE2/2352`, `INDEX 01 00:00:00`입니다.
@@ -57,14 +57,16 @@ xdelta3 3.2.0을 별도로 사용합니다.
 ## 호환성
 
 - Mednafen PSX 빌드 `013d057`: 장편 자연 플레이와 진엔딩까지 검증
+- DuckStation: 사용자 구동·플레이 확인
 - 일반 메모리카드 저장: 호환 확인
-- 실제 PlayStation 본체: 구동 확인
+- PS2 실기 POPS 환경: 외부 사용자 구동 확인
+- 원본 PlayStation 본체: 미검증
 - PSP POPS용 EBOOT.PBP 변환: 미검증
-- 그 밖의 PS1 에뮬레이터: Duckstation 호환 확인 
+- 그 밖의 PS1 에뮬레이터: 미검증
 - 서로 다른 패치 BIN에서 만든 에뮬레이터 savestate: 지원하지 않음
 
 PSP나 다른 에뮬레이터로 옮길 때는 먼저 패치 직후 BIN이 위의
-`70a8…61b3`인지 확인하세요. EBOOT.PBP 등으로 변환한 뒤에는 파일 형식이
+`4dce…fb9c`인지 확인하세요. EBOOT.PBP 등으로 변환한 뒤에는 파일 형식이
 달라지므로 이 SHA-256과 더 이상 같지 않은 것이 정상입니다. 자세한 범위는
 [호환성 문서](docs/COMPATIBILITY.md)를 참고하세요.
 
@@ -74,9 +76,10 @@ PSP나 다른 에뮬레이터로 옮길 때는 먼저 패치 직후 BIN이 위�
 - 일반 메모리카드 저장은 사용할 수 있지만, 다른 BIN에서 만든 savestate는
   불러오지 마세요.
 - 엔딩의 지연된 숨은 메시지는 마지막 상태입니다. 그 뒤 타이틀로 자동
-  복귀하지 않는 현상은 v1.0 진행 불가 문제로 분류하지 않았습니다.
-- 음성만 존재하는 일부 오프닝·엔딩 대사와 엔딩의 일부 일본어 이미지
-  한국어화는 후속 연구 범위입니다.
+  복귀하지 않는 현상은 v1.1 진행 불가 문제로 분류하지 않았습니다.
+- v1.1은 사용자 승인 범위의 엔딩 이미지 5개를 한국어화했습니다. 그 밖의
+  엔딩 이미지는 변경하지 않았습니다.
+- 음성만 존재하는 일부 오프닝·엔딩 대사 자막은 후속 연구 범위입니다.
 
 ## 오류 제보
 

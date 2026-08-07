@@ -17,11 +17,11 @@ $ExpectedInputSize = 640491936
 $ExpectedInputSha256 = "828189dd7cba0211585c9e06a99936924f0fb883da428525f1fc73790fb403f2"
 $ExpectedCueSize = 108
 $ExpectedCueSha256 = "031a35316b96460c474e3a6a99bd2dfb98e6408dedd8ceadffc49faf20d77482"
-$PatchName = "moon_ps1_kr_v1.0_rev1_70a8a7d2.xdelta"
-$ExpectedPatchSize = 277452
-$ExpectedPatchSha256 = "1c4c54c63e944ed0b5baabc0d8bc759568e2d7ab400554945b16f81e0257de10"
+$PatchName = "moon_ps1_kr_v1.1_rev1_4dcea06e.xdelta"
+$ExpectedPatchSize = 332986
+$ExpectedPatchSha256 = "48e5cc30f88dbe7858f4096d9fb7c1942a4c1344dc16f702460e53b88379208e"
 $ExpectedOutputSize = 640491936
-$ExpectedOutputSha256 = "70a8a7d27ff38e0dba186fd88e9040d44c06221086d7d44dba633b6deeb661b3"
+$ExpectedOutputSha256 = "4dcea06e752afabab4d525903815fc21f681718e1ff59952ff95da6f2992fb9c"
 $ExpectedXdeltaSize = 336896
 $ExpectedXdeltaSha256 = "53d90226615f217d3380c39892833311b4e24acd863e1ca01f14b5e772e2e6d0"
 
@@ -85,7 +85,7 @@ $Root = Split-Path -Parent $MyInvocation.MyCommand.Path
 $TempDir = $null
 
 try {
-    Write-Host "moon PS1 Korean Patch v1.0 - Windows Portable"
+    Write-Host "moon PS1 Korean Patch v1.1 - Windows Portable"
     Write-Host "No Python installation is required."
     Write-Host ""
 
@@ -117,12 +117,12 @@ try {
     Assert-ExactFile $Xdelta "xdelta3.exe" $ExpectedXdeltaSize $ExpectedXdeltaSha256
 
     $OutputParent = Split-Path -Parent $SourceBin
-    $OutputDir = Join-Path $OutputParent "Moon_Korean_v1.0"
+    $OutputDir = Join-Path $OutputParent "Moon_Korean_v1.1"
     if (Test-Path -LiteralPath $OutputDir) {
         throw "Output folder already exists: $OutputDir`nMove or rename it before trying again."
     }
 
-    $TempDir = Join-Path $OutputParent (".Moon_Korean_v1.0.tmp-" + [Guid]::NewGuid().ToString("N"))
+    $TempDir = Join-Path $OutputParent (".Moon_Korean_v1.1.tmp-" + [Guid]::NewGuid().ToString("N"))
     New-Item -ItemType Directory -Path $TempDir | Out-Null
     $OutputBin = Join-Path $TempDir $ExpectedBinName
     $OutputCue = Join-Path $TempDir $ExpectedCueName

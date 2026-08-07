@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Safely apply the Moon PS1 Korean v1.0 xdelta patch."""
+"""Safely apply the current Moon PS1 Korean xdelta patch."""
 
 from __future__ import annotations
 
@@ -61,7 +61,8 @@ def apply(args: argparse.Namespace) -> Path:
 
     output_dir = args.output_dir
     if output_dir is None:
-        output_dir = source_bin.parent / "Moon_Korean_v1.0"
+        version = manifest["release"]["version"]
+        output_dir = source_bin.parent / f"Moon_Korean_v{version}"
     output_dir = output_dir.expanduser().resolve()
     if output_dir.exists():
         raise ReleaseError(
@@ -114,7 +115,7 @@ def parser() -> argparse.ArgumentParser:
     result = argparse.ArgumentParser(description=__doc__)
     result.add_argument("--bin", type=Path, help="지원 원본 Rev 1 BIN")
     result.add_argument("--cue", type=Path, help="지원 원본 Rev 1 CUE")
-    result.add_argument("--patch", type=Path, help="v1.0 xdelta 패치")
+    result.add_argument("--patch", type=Path, help="한국어 xdelta 패치")
     result.add_argument("--output-dir", type=Path, help="새 출력 폴더")
     result.add_argument("--xdelta", type=Path, help="xdelta3 실행 파일")
     result.add_argument("--manifest", type=Path, help="릴리스 매니페스트")

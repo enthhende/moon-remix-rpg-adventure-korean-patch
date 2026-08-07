@@ -33,6 +33,7 @@ BASE_FILES = (
     "docs/INSTALL_KO.md",
     "docs/COMPATIBILITY.md",
     "docs/FAQ_KO.md",
+    "RELEASE_NOTES_v1.1.md",
 )
 POWERSHELL_UTF8_BOM = b"\xef\xbb\xbf"
 
@@ -91,8 +92,8 @@ def extract_xdelta_exe(archive_path: Path, manifest: dict) -> bytes:
 
 def build(args: argparse.Namespace) -> tuple[Path, Path]:
     manifest = load_manifest(args.manifest)
-    if manifest["release"]["version"] != "1.0":
-        raise ReleaseError("릴리스 버전이 v1.0이 아닙니다.")
+    if manifest["release"]["version"] != "1.1":
+        raise ReleaseError("릴리스 버전이 v1.1이 아닙니다.")
     if manifest["licensing"]["status"] != "approved":
         raise ReleaseError("라이선스 범위가 승인되지 않았습니다.")
     findings = audit(ROOT)

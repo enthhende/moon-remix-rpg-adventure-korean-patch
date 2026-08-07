@@ -73,7 +73,7 @@ def classify_bin(path: Path, manifest: dict[str, Any]) -> tuple[str, str]:
     digest = sha256_file(path)
     for state, spec in (
         ("supported_original", manifest["supported_input"]["bin"]),
-        ("patched_v1.0", manifest["output"]["bin"]),
+        ("patched_release", manifest["output"]["bin"]),
     ):
         if size == int(spec["size"]) and digest == str(spec["sha256"]):
             return state, digest

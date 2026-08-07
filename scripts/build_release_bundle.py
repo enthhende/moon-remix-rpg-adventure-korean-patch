@@ -19,7 +19,7 @@ from release_lib import ReleaseError, load_manifest, validate_file  # noqa: E402
 from scripts.audit_public_repo import audit  # noqa: E402
 
 
-FIXED_ZIP_TIME = (2026, 8, 6, 0, 0, 0)
+FIXED_ZIP_TIME = (2026, 8, 7, 0, 0, 0)
 BASE_FILES = (
     "LICENSE",
     "README_FIRST_KO.txt",
@@ -39,6 +39,7 @@ BASE_FILES = (
     "docs/INSTALL_KO.md",
     "docs/COMPATIBILITY.md",
     "docs/FAQ_KO.md",
+    "RELEASE_NOTES_v1.1.md",
 )
 EXECUTABLES = {
     "apply_patch.py",
@@ -76,8 +77,8 @@ def add_bytes(
 
 def build(args: argparse.Namespace) -> tuple[Path, Path]:
     manifest = load_manifest(args.manifest)
-    if manifest["release"]["version"] != "1.0":
-        raise ReleaseError("릴리스 버전이 v1.0이 아닙니다.")
+    if manifest["release"]["version"] != "1.1":
+        raise ReleaseError("릴리스 버전이 v1.1이 아닙니다.")
     if manifest["licensing"]["status"] != "approved":
         raise ReleaseError(
             "라이선스 범위가 아직 최종 승인되지 않았습니다. "

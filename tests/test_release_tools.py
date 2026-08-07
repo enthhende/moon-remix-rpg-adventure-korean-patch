@@ -16,9 +16,9 @@ from scripts.audit_public_repo import audit  # noqa: E402
 
 
 class ReleaseToolsTest(unittest.TestCase):
-    def test_manifest_pins_v1_0_identities(self) -> None:
+    def test_manifest_pins_v1_1_identities(self) -> None:
         manifest = load_manifest()
-        self.assertEqual(manifest["release"]["version"], "1.0")
+        self.assertEqual(manifest["release"]["version"], "1.1")
         self.assertEqual(manifest["supported_input"]["bin"]["size"], 640491936)
         self.assertEqual(
             manifest["supported_input"]["bin"]["sha256"],
@@ -26,11 +26,11 @@ class ReleaseToolsTest(unittest.TestCase):
         )
         self.assertEqual(
             manifest["output"]["bin"]["sha256"],
-            "70a8a7d27ff38e0dba186fd88e9040d44c06221086d7d44dba633b6deeb661b3",
+            "4dcea06e752afabab4d525903815fc21f681718e1ff59952ff95da6f2992fb9c",
         )
         self.assertEqual(
             manifest["patch"]["sha256"],
-            "1c4c54c63e944ed0b5baabc0d8bc759568e2d7ab400554945b16f81e0257de10",
+            "48e5cc30f88dbe7858f4096d9fb7c1942a4c1344dc16f702460e53b88379208e",
         )
         self.assertFalse(manifest["verification"]["reverse_patch_distributed"])
 

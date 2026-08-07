@@ -13,7 +13,6 @@ from release_lib import ReleaseError, classify_bin, load_manifest, validate_file
 
 LABELS = {
     "supported_original": "지원 원본: Japan Rev 1",
-    "patched_v1.0": "한국어 패치 v1.0",
     "unsupported": "지원하지 않는 이미지",
 }
 
@@ -27,6 +26,10 @@ def main() -> int:
     args = parser.parse_args()
     try:
         manifest = load_manifest(args.manifest)
+        labels = dict(LABELS)
+        labels["patched_release"] = (
+            f"한국어 패치 v{manifest['release']['version']}"
+        )
         bin_path = args.bin.expanduser().resolve()
         state, digest = classify_bin(bin_path, manifest)
         cue_state = "not_checked"
@@ -36,7 +39,7 @@ def main() -> int:
             cue_state = "valid"
         report = {
             "state": state,
-            "label": LABELS[state],
+            "label": labels[state],
             "bin": str(bin_path),
             "bin_size": bin_path.stat().st_size,
             "bin_sha256": digest,
