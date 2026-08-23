@@ -34,7 +34,6 @@ BASE_FILES = (
     "docs/COMPATIBILITY.md",
     "docs/FAQ_KO.md",
     "docs/HIDDEN_CONTENT_GUIDE_KO.md",
-    "docs/V2_0_WORKLOG_KO.md",
     "RELEASE_NOTES_v2.0.md",
 )
 POWERSHELL_UTF8_BOM = b"\xef\xbb\xbf"

@@ -113,7 +113,6 @@ Rev 1 원본에서 시작해야 합니다.
 
 - [v2.0 릴리스 노트](RELEASE_NOTES_v2.0.md)
 - [숨겨진 콘텐츠 안내](docs/HIDDEN_CONTENT_GUIDE_KO.md)
-- [v2.0 작업기](docs/V2_0_WORKLOG_KO.md)
 - [설치 안내](docs/INSTALL_KO.md)
 - [자주 묻는 질문](docs/FAQ_KO.md)
 

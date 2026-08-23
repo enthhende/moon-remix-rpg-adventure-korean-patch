@@ -70,8 +70,7 @@ v1.0이나 v1.1 결과에 덧붙이지 말고 깨끗한 일본판 Rev 1 원본�
 선택하세요.
 
 강한 결말 스포일러가 있습니다. 자세한 조작은
-`docs/HIDDEN_CONTENT_GUIDE_KO.md`, 개발 과정은
-`docs/V2_0_WORKLOG_KO.md`를 확인하세요.
+`docs/HIDDEN_CONTENT_GUIDE_KO.md`를 확인하세요.
 
 ## 호환성 주의
 

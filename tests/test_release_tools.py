@@ -13,6 +13,10 @@ sys.path.insert(0, str(ROOT))
 
 from release_lib import ReleaseError, load_manifest, sha256_file, validate_file  # noqa: E402
 from scripts.audit_public_repo import audit  # noqa: E402
+from scripts.build_release_bundle import BASE_FILES as GENERAL_BASE_FILES  # noqa: E402
+from scripts.build_windows_portable_bundle import (  # noqa: E402
+    BASE_FILES as WINDOWS_BASE_FILES,
+)
 
 
 class ReleaseToolsTest(unittest.TestCase):
@@ -56,6 +60,30 @@ class ReleaseToolsTest(unittest.TestCase):
             xdelta["exe_sha256"],
             "53d90226615f217d3380c39892833311b4e24acd863e1ca01f14b5e772e2e6d0",
         )
+
+    def test_release_bundles_exclude_editorial_worklog(self) -> None:
+        required_player_docs = {
+            "README_FIRST_KO.txt",
+            "README.md",
+            "RELEASE_NOTES_v2.0.md",
+            "docs/INSTALL_KO.md",
+            "docs/COMPATIBILITY.md",
+            "docs/FAQ_KO.md",
+            "docs/HIDDEN_CONTENT_GUIDE_KO.md",
+        }
+        for bundle_files in (set(GENERAL_BASE_FILES), set(WINDOWS_BASE_FILES)):
+            self.assertTrue(required_player_docs.issubset(bundle_files))
+            self.assertNotIn("docs/V2_0_WORKLOG_KO.md", bundle_files)
+        self.assertTrue((ROOT / "docs/V2_0_WORKLOG_KO.md").is_file())
+        for packaged_doc in (
+            ROOT / "README.md",
+            ROOT / "README_FIRST_KO.txt",
+            ROOT / "RELEASE_NOTES_v2.0.md",
+        ):
+            self.assertNotIn(
+                "V2_0_WORKLOG_KO.md",
+                packaged_doc.read_text(encoding="utf-8"),
+            )
 
     def test_windows_wrapper_is_python_free_and_pins_all_inputs(self) -> None:
         manifest = load_manifest()

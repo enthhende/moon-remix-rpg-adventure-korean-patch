@@ -52,4 +52,3 @@ SELECT를 누릅니다. 노란색 *미사용 개발 자료를 ○ 버튼으로 �
 
 자세한 설치: docs/INSTALL_KO.md
 숨겨진 메뉴: docs/HIDDEN_CONTENT_GUIDE_KO.md
-v2.0 작업기: docs/V2_0_WORKLOG_KO.md
