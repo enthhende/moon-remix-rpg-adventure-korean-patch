@@ -10,7 +10,7 @@
 
 ## 글꼴
 
-### Galmuri14 v2.40.4
+### Galmuri9/Galmuri14 v2.40.4
 
 - 저작권: Copyright (c) 2019–2025 Lee Minseo
 - 프로젝트: <https://github.com/quiple/galmuri>

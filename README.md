@@ -7,7 +7,27 @@ PlayStation 일본판 `moon: Remix RPG Adventure` Rev 1을 대상으로 하는
 않습니다. 패치를 사용하려면 이용자가 직접 준비한 정확한 일본판 Rev 1
 BIN/CUE가 필요합니다.
 
-> 현재 호환성 표기: **Mednafen·DuckStation 검증 / PS2 POPS 실기 확인**
+> v2.0 추가 콘텐츠는 Mednafen에서 검증했습니다. DuckStation과 PS2 POPS는
+> v1.1 당시의 사용자 확인 기록이며, 원본 PlayStation 본체는 미검증입니다.
+
+## v2.0 주요 내용
+
+v2.0은 v1.1의 단순 문구 수정판이 아닙니다.
+
+- Game Start/Continue 화면에서 `SELECT`로 진입하는 숨겨진
+  `미사용 개발 자료` 메뉴
+- 이미지 16장과 한국어 해설을 합친 총 48화면의 `보너스 자료관`
+- 남아 있던 미사용 장면을 안전하게 감상할 수 있도록 재구성한
+  `용의꼬리(미사용 엔딩)`과 `소년과 할머니`
+- 이름 끝에 `@♥` 같은 특수문자가 있어도 마지막 한글을 찾아 조사와
+  호격을 고르는 주인공 이름 전용 처리
+- 일반 대화의 `♥`·`@` 치환, 데이터 삭제 문구 겹침, 호칭·번역·줄바꿈
+  수정
+- Galmuri9/Galmuri14 기반 영문·특수문자 조정과 MD 문장 전체
+  실제 폭 기준 가운데 정렬
+
+추가 콘텐츠에는 본편 결말과 설정에 관한 강한 스포일러가 있습니다.
+가능하면 본편 엔딩을 본 뒤 열람해 주세요.
 
 ## 다운로드
 
@@ -15,70 +35,87 @@ GitHub 사용에 익숙하지 않다면 저장소의 초록색 `Code` 버튼이 
 [Releases](https://github.com/enthhende/moon-remix-rpg-adventure-korean-patch/releases/latest)에서
 운영체제에 맞는 파일을 받으세요.
 
-- Windows 10/11 64비트: `Moon_PS1_Korean_Patch_v1.1_Windows_Portable.zip`
-  (권장, Python이나 xdelta 별도 설치 불필요)
-- macOS/Linux 또는 고급 사용자: `Moon_PS1_Korean_Patch_v1.1.zip`
-- 직접 명령행으로 적용할 사용자: 단독 `.xdelta` 파일
+- Windows 10/11 64비트:
+  `Moon_PS1_Korean_Patch_v2.0_Windows_Portable.zip`
+  - 권장 패키지입니다. Python이나 xdelta를 따로 설치할 필요가 없습니다.
+- macOS/Linux 또는 고급 사용자:
+  `Moon_PS1_Korean_Patch_v2.0.zip`
+- 직접 명령행으로 적용할 사용자:
+  `moon_ps1_kr_v2.0_rev1_c5e58d0b.xdelta`
 
-압축을 푼 뒤 `README_FIRST_KO.txt` 또는 [한국어 설치 안내](docs/INSTALL_KO.md)를
-따르면 됩니다.
+압축을 푼 뒤 `README_FIRST_KO.txt` 또는
+[한국어 설치 안내](docs/INSTALL_KO.md)를 따르면 됩니다.
 
 ## 빠른 적용
 
-Windows 권장 패키지에 필요한 것:
+Windows에서는 Portable ZIP을 완전히 푼 뒤
+`apply_patch_windows.bat`을 실행합니다. macOS에서는 일반 패키지의
+`apply_patch_macos.command`, Linux에서는 `apply_patch_linux.sh`를
+실행합니다.
 
-- 합법적으로 준비한 일본판 Rev 1 BIN/CUE
-- `Moon_PS1_Korean_Patch_v1.1_Windows_Portable.zip`
-
-압축을 완전히 푼 뒤 `apply_patch_windows.bat`을 실행합니다. Portable
-패키지에는 검증된 xdelta3가 동봉되어 Python을 설치할 필요가 없습니다.
-
-macOS에서는 일반 패키지의 `apply_patch_macos.command`, Linux에서는
-`apply_patch_linux.sh`를 실행합니다. 이 두 환경의 일반 패키지는 Python 3와
-xdelta3 3.2.0을 별도로 사용합니다.
-적용기는 입력 파일의 크기와 SHA-256을 먼저 검사하고, 다른 리비전이나
-이미 패치된 파일이면 쓰기 전에 중단합니다.
-
-성공하면 별도 `Moon_Korean_v1.1` 폴더에 BIN/CUE가 만들어집니다. 원본은
+적용기는 원본 BIN/CUE와 패치 파일의 크기·SHA-256을 먼저 검사합니다.
+성공하면 원본 옆의 별도 `Moon_Korean_v2.0` 폴더에 결과를 만들며 원본을
 수정하거나 덮어쓰지 않습니다. 에뮬레이터에서는 새 폴더의 CUE 파일을
 여세요.
+
+v1.0이나 v1.1 결과에 덧붙이는 패치가 아닙니다. 반드시 깨끗한 일본판
+Rev 1 원본에서 시작해야 합니다.
+
+## 숨겨진 메뉴 빠른 안내
+
+1. `PUSH START` 화면에서 `START`를 누릅니다.
+2. 원래 Game Start/Continue 화면이 나오면 `SELECT`를 누릅니다.
+3. 노란색 `*미사용 개발 자료`를 `○` 버튼으로 고릅니다.
+4. 스포일러 확인에서 `예`를 선택합니다.
+
+자료관에서는 `○`·`→`·`↓`로 다음 화면, `←`·`↑`로 이전 화면,
+`×`로 목록에 돌아갑니다. 자세한 조작과 콘텐츠 성격은
+[숨겨진 콘텐츠 안내](docs/HIDDEN_CONTENT_GUIDE_KO.md)를 확인하세요.
 
 ## 지원 원본과 결과
 
 | 구분 | 크기 | SHA-256 |
 |---|---:|---|
 | 지원 원본 Rev 1 BIN | 640,491,936 bytes | `828189dd7cba0211585c9e06a99936924f0fb883da428525f1fc73790fb403f2` |
-| 한국어 패치 v1.1 BIN | 640,491,936 bytes | `4dcea06e752afabab4d525903815fc21f681718e1ff59952ff95da6f2992fb9c` |
+| 한국어 패치 v2.0 BIN | 640,491,936 bytes | `c5e58d0b9030a0f8683126f2866b633c70e6ea5e12c699524dfece1c67fcc43d` |
 | 원본·결과 CUE | 108 bytes | `031a35316b96460c474e3a6a99bd2dfb98e6408dedd8ceadffc49faf20d77482` |
 
-트랙 구조는 단일 `TRACK 01 MODE2/2352`, `INDEX 01 00:00:00`입니다.
-파일 이름보다 위 크기와 SHA-256이 판정 기준입니다.
+트랙 구조는 단일 `TRACK 01 MODE2/2352`,
+`INDEX 01 00:00:00`입니다. 파일 이름보다 위 크기와 SHA-256이 판정
+기준입니다.
 
-## 호환성
+## 호환성과 검증 범위
 
-- Mednafen PSX 빌드 `013d057`: 장편 자연 플레이와 진엔딩까지 검증
-- DuckStation: 사용자 구동·플레이 확인
-- 일반 메모리카드 저장: 호환 확인
-- PS2 실기 POPS 환경: 외부 사용자 구동 확인
-- 원본 PlayStation 본체: 미검증
-- PSP POPS용 EBOOT.PBP 변환: 미검증
-- 그 밖의 PS1 에뮬레이터: 미검증
+- Mednafen PSX 빌드 `013d057`: 본편과 v2.0 추가 콘텐츠·최종 수정 검증
+- DuckStation: v1.1 사용자 구동·플레이 확인
+- PS2 실기 POPS 환경: v1.1 외부 사용자 구동 확인
+- 일반 메모리카드 저장: 호환 확인, 사용 전 백업 권장
+- 원본 PlayStation 본체, PSP POPS/EBOOT.PBP, 그 밖의 실행 환경:
+  v2.0 미검증
 - 서로 다른 패치 BIN에서 만든 에뮬레이터 savestate: 지원하지 않음
 
-PSP나 다른 에뮬레이터로 옮길 때는 먼저 패치 직후 BIN이 위의
-`4dce…fb9c`인지 확인하세요. EBOOT.PBP 등으로 변환한 뒤에는 파일 형식이
-달라지므로 이 SHA-256과 더 이상 같지 않은 것이 정상입니다. 자세한 범위는
+이전 버전의 외부 확인 기록을 v2.0 추가 콘텐츠까지 검증한 것으로
+확대하지 않습니다. 자세한 범위는
 [호환성 문서](docs/COMPATIBILITY.md)를 참고하세요.
 
 ## 주의사항
 
-- 원본 BIN/CUE는 반드시 별도로 보관하세요.
-- 일반 메모리카드 저장은 사용할 수 있지만, 다른 BIN에서 만든 savestate는
-  불러오지 마세요.
-- 엔딩의 지연된 숨은 메시지는 마지막 상태입니다. 그 뒤 타이틀로 자동
-  복귀하지 않는 현상은 v1.1 진행 불가 문제로 분류하지 않았습니다.
-- v1.1은 엔딩 이미지 5개를 한국어화했습니다.
-- 음성만 존재하는 일부 오프닝·엔딩 대사 자막은 후속 연구 범위입니다.
+- 원본 BIN/CUE와 메모리카드 저장은 반드시 별도로 보관하세요.
+- 다른 패치 버전의 savestate를 불러오지 말고, 게임 내 저장 뒤
+  에뮬레이터를 완전히 종료해 새 CUE로 콜드 부팅하세요.
+- 숨겨진 자료 메뉴에서는 일반 게임 저장을 진행하지 않도록 보호했지만,
+  중요한 저장 데이터의 백업을 대체하지는 않습니다.
+- `용의꼬리(미사용 엔딩)`은 완성 이벤트 하나의 잠금을 푼 것이 아니라,
+  디스크에 남은 여러 장면을 조사해 연결한 재구성판입니다.
+- 음성만 존재하는 일부 오프닝·엔딩 대사 자막은 별도 연구 범위입니다.
+
+## 더 읽기
+
+- [v2.0 릴리스 노트](RELEASE_NOTES_v2.0.md)
+- [숨겨진 콘텐츠 안내](docs/HIDDEN_CONTENT_GUIDE_KO.md)
+- [v2.0 작업기](docs/V2_0_WORKLOG_KO.md)
+- [설치 안내](docs/INSTALL_KO.md)
+- [자주 묻는 질문](docs/FAQ_KO.md)
 
 ## 오류 제보
 
@@ -87,11 +124,11 @@ PSP나 다른 에뮬레이터로 옮길 때는 먼저 패치 직후 BIN이 위�
 
 - 패치 버전과 완성 BIN SHA-256
 - 에뮬레이터 이름·버전 또는 실기 본체 모델
-- PSP라면 EBOOT.PBP 변환 도구와 설정
 - 재현 위치, 직전 행동, 메모리카드/새 게임 여부
 - 가능하다면 화면과 로그
 
-원본·패치된 BIN/CUE, BIOS, 메모리카드 전체 덤프는 업로드하지 마세요.
+원본·패치된 BIN/CUE, BIOS, 메모리카드 전체 덤프와 savestate는
+업로드하지 마세요.
 
 ## 저작권과 라이선스
 

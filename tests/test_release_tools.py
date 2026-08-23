@@ -16,9 +16,10 @@ from scripts.audit_public_repo import audit  # noqa: E402
 
 
 class ReleaseToolsTest(unittest.TestCase):
-    def test_manifest_pins_v1_1_identities(self) -> None:
+    def test_manifest_pins_v2_0_identities(self) -> None:
         manifest = load_manifest()
-        self.assertEqual(manifest["release"]["version"], "1.1")
+        self.assertEqual(manifest["release"]["version"], "2.0")
+        self.assertEqual(manifest["release"]["status"], "release_ready")
         self.assertEqual(manifest["supported_input"]["bin"]["size"], 640491936)
         self.assertEqual(
             manifest["supported_input"]["bin"]["sha256"],
@@ -26,12 +27,16 @@ class ReleaseToolsTest(unittest.TestCase):
         )
         self.assertEqual(
             manifest["output"]["bin"]["sha256"],
-            "4dcea06e752afabab4d525903815fc21f681718e1ff59952ff95da6f2992fb9c",
+            "c5e58d0b9030a0f8683126f2866b633c70e6ea5e12c699524dfece1c67fcc43d",
         )
         self.assertEqual(
             manifest["patch"]["sha256"],
-            "48e5cc30f88dbe7858f4096d9fb7c1942a4c1344dc16f702460e53b88379208e",
+            "2fa620c700d7b21adb2a35709a67a0bc166da34f3dffbcd04d6036bb5be97b16",
         )
+        self.assertEqual(manifest["freeze"]["candidate"], "O46")
+        self.assertTrue(manifest["freeze"]["user_final_designation"])
+        self.assertTrue(manifest["features"]["select_hidden_menu"])
+        self.assertFalse(manifest["features"]["stock_item_classifier_changed"])
         self.assertFalse(manifest["verification"]["reverse_patch_distributed"])
 
     def test_windows_portable_pins_official_xdelta(self) -> None:
