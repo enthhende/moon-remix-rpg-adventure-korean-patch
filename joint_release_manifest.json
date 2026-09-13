@@ -11,7 +11,7 @@
     {"platform": "ps1", "filename": "Moon_PS1_Korean_Patch_v2.0_Windows_Portable.zip", "bytes": 1304674, "sha256": "68fbb6b87d8613485c5208d43d202897b39f377f2231a6e18e74508f769237c3"},
     {"platform": "ps1", "filename": "moon_ps1_kr_v2.0_rev1_c5e58d0b.xdelta", "bytes": 1117444, "sha256": "2fa620c700d7b21adb2a35709a67a0bc166da34f3dffbcd04d6036bb5be97b16"},
     {"platform": "ps1", "filename": "SHA256SUMS.txt", "bytes": 315, "sha256": "9f563db4b9c6e7b4d78b1398e310c58a827caa08c029e87966d477cb0c2df3d0"},
-    {"platform": "steam-windows", "filename": "moon-windows-korean-final-rc-002-release.zip", "bytes": 1587997, "sha256": "77dbf8aeae794581d0b12c084d6dedadfec26afae30179dbefcad5120afbb25a"},
+    {"platform": "steam-windows", "filename": "moon-windows-korean-final-rc-003-release.zip", "bytes": 1589924, "sha256": "c0e25acef9a5a156a309205b4878549a05ac1f2b221ecf577081859e4d3c0f09"},
     {"platform": "steam-macos", "filename": "moon-steam-macos-korean-rc-001.zip", "bytes": 950528, "sha256": "8d50e01c759fd0078bc9da95e801888e2c7a26bd3e4db2cd70b4cde9e68c250f"},
     {"platform": "switch", "filename": "0100E1800EFCE000.zip", "bytes": 958467, "sha256": "c62aad4320a74748007ef1faf6c4f08ccfe1a25f48ff4d19edfe51886ce8d8d0"}
   ],
@@ -33,8 +33,8 @@
     },
     "steam-windows": {
       "supported_source": "Steam App ID 1714580, Build ID 23044446, exact source profile required",
-      "runtime": "PASS_WITH_DISCLOSED_NOT_RUN_LIMITATIONS",
-      "limitations": ["physical controller runtime was not performed", "university blackboard screen runtime was not performed"]
+      "runtime": "GAME_CONTENT_PASS_WITH_DISCLOSED_NOT_RUN_LIMITATIONS; BATCH_FRONTEND_STATIC_PASS_WINDOWS_DOUBLE_CLICK_NOT_RUN",
+      "limitations": ["Windows batch frontend double-click runtime was not performed", "physical controller runtime was not performed", "university blackboard screen runtime was not performed"]
     }
   },
   "claim_boundary": {

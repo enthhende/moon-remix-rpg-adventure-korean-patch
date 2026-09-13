@@ -14,7 +14,7 @@
 | PS1 checksum | `SHA256SUMS.txt` | 315 | `9f563db4b9c6e7b4d78b1398e310c58a827caa08c029e87966d477cb0c2df3d0` |
 | Switch | `0100E1800EFCE000.zip` | 958,467 | `c62aad4320a74748007ef1faf6c4f08ccfe1a25f48ff4d19edfe51886ce8d8d0` |
 | Steam macOS | `moon-steam-macos-korean-rc-001.zip` | 950,528 | `8d50e01c759fd0078bc9da95e801888e2c7a26bd3e4db2cd70b4cde9e68c250f` |
-| Steam Windows | `moon-windows-korean-final-rc-002-release.zip` | 1,587,997 | `77dbf8aeae794581d0b12c084d6dedadfec26afae30179dbefcad5120afbb25a` |
+| Steam Windows | `moon-windows-korean-final-rc-003-release.zip` | 1,589,924 | `c0e25acef9a5a156a309205b4878549a05ac1f2b221ecf577081859e4d3c0f09` |
 
 `joint_release_manifest.json`은 위 자산의 플랫폼·크기·SHA-256과 검증 한계를 기록합니다.
 `JOINT_SHA256SUMS.txt`는 위 7개 자산과 public manifest를 검사하며 자기 자신은 포함하지
@@ -28,8 +28,9 @@
   runtime은 통과했지만 Atmosphère 실기 직접 검증은 `NOT_RUN`입니다.
 - Steam macOS: Build ID 23044446의 정확한 원본으로 새 복사본을 만드는 patch-only
   적용기입니다. x86_64 전용 command 실행만 지원하며 R9 남단 복귀 화면은 별도 미관찰입니다.
-- Steam Windows: Build ID 23044446용 patch-only RC002입니다. 실제 controller 경로와 대학
-  칠판 화면은 공개된 `NOT_RUN` 제한입니다.
+- Steam Windows: Build ID 23044446용 patch-only RC003입니다. `INSTALL_KO.bat`과
+  `UNINSTALL_KO.bat`을 더블클릭해 적용·제거하며 PowerShell 명령을 직접 입력하지 않습니다.
+  배치의 실제 Windows 더블클릭과 controller 경로, 대학 칠판 화면은 `NOT_RUN` 제한입니다.
 
 보너스 자료관의 사용자 제공 이미지 16장과 그 파생 화면은 제공자의 2026-09-13 공개 배포
 승인에 따라 비상업 팬 패치에 포함합니다. 이는 원작 자료 전반에 대한 별도 권리 부여를
