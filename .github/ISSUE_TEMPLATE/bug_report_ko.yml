@@ -1,55 +1,48 @@
 name: 한국어 패치 오류·호환성 제보
-description: 크래시, 표시 문제, PSP/에뮬레이터/실기 호환성을 제보합니다.
-title: "[v1.0] "
+description: PS1·Switch·Steam macOS·Steam Windows의 문제를 제보합니다.
+title: "[플랫폼 / 버전] "
 labels:
   - bug
 body:
   - type: markdown
     attributes:
       value: |
-        원본·패치된 게임 이미지, BIOS, 메모리카드 전체 덤프와 savestate는 첨부하지 마세요.
-  - type: input
-    id: output_sha
+        게임 본체·ROM·BIOS·키·세이브 전체·개인정보가 든 로그는 공개 첨부하지 마세요.
+  - type: dropdown
+    id: platform
     attributes:
-      label: 패치 직후 BIN SHA-256
-      description: EBOOT.PBP 변환 전 verify_image.py 결과를 권장합니다.
-      placeholder: 70a8a7d27ff38e0dba186fd88e9040d44c06221086d7d44dba633b6deeb661b3
+      label: 게임 플랫폼
+      options:
+        - PS1
+        - Nintendo Switch
+        - Steam macOS
+        - Steam Windows
     validations:
       required: true
-  - type: dropdown
-    id: environment
+  - type: input
+    id: package
     attributes:
-      label: 실행 환경
-      options:
-        - PS1 에뮬레이터
-        - PSP POPS / EBOOT.PBP
-        - 실제 PlayStation 본체
-        - 기타
+      label: 사용한 패키지 파일명과 버전
+      description: PS1 Windows Portable은 PS1 게임용 도구입니다.
+    validations:
+      required: true
+  - type: textarea
+    id: identity
+    attributes:
+      label: 원본 버전 및 패치 검사 결과
+      description: Steam Build ID 또는 Switch 업데이트/Build ID, PS1 Rev와 SHA-256 등 확인한 결과를 적어 주세요.
     validations:
       required: true
   - type: input
     id: runtime
     attributes:
-      label: 기기·에뮬레이터·펌웨어/변환 도구와 버전
+      label: 운영체제·기기·에뮬레이터와 버전
     validations:
       required: true
   - type: textarea
     id: steps
     attributes:
-      label: 재현 순서
-      description: 장소, 이벤트, 직전 행동과 반복 재현 여부를 적어 주세요.
-    validations:
-      required: true
-  - type: textarea
-    id: actual
-    attributes:
-      label: 실제 결과
-    validations:
-      required: true
-  - type: textarea
-    id: expected
-    attributes:
-      label: 기대 결과
+      label: 재현 순서·실제 결과·기대 결과
     validations:
       required: true
   - type: checkboxes
@@ -57,5 +50,5 @@ body:
     attributes:
       label: 첨부물 확인
       options:
-        - label: 원본·패치된 게임 이미지, BIOS, 메모리카드 덤프 또는 savestate를 첨부하지 않았습니다.
+        - label: 게임 본체·ROM·BIOS·키·전체 세이브·개인정보를 첨부하지 않았습니다.
           required: true

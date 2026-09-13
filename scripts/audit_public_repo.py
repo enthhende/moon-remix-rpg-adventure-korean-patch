@@ -11,6 +11,9 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 IGNORED_DIRS = {".git", "dist", "release-assets", "__pycache__", ".venv"}
 FORBIDDEN_SUFFIXES = {
+    ".dll", ".exe", ".dylib", ".nsp", ".xci", ".nca", ".keys",
+    ".assets", ".ress", ".pack", ".ips", ".pml", ".dmp",
+
     ".7z",
     ".bin",
     ".ccd",
@@ -54,6 +57,8 @@ def source_files(root: Path):
 def audit(root: Path) -> list[str]:
     findings: list[str] = []
     for path, relative in source_files(root):
+        if path.is_symlink():
+            findings.append(f"source symlink: {relative}")
         suffix = path.suffix.lower()
         if suffix in FORBIDDEN_SUFFIXES:
             findings.append(f"forbidden extension: {relative}")
@@ -63,6 +68,7 @@ def audit(root: Path) -> list[str]:
         try:
             text = path.read_text(encoding="utf-8")
         except (UnicodeDecodeError, OSError):
+            findings.append(f"non-text source: {relative}")
             continue
         for needle, label in FORBIDDEN_TEXT.items():
             if needle in text:

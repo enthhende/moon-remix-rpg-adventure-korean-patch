@@ -77,6 +77,8 @@ def add_bytes(
 
 
 def build(args: argparse.Namespace) -> tuple[Path, Path]:
+    if (ROOT / "JOINT_RELEASE_CONTRACT.md").exists():
+        raise ReleaseError("Frozen PS1 ZIP: rebuild from commit 7ed58079145a8ddd0236d338ad3e0a4e765d8558, not the joint tree.")
     manifest = load_manifest(args.manifest)
     if manifest["release"]["version"] != "2.0":
         raise ReleaseError("릴리스 버전이 v2.0이 아닙니다.")
