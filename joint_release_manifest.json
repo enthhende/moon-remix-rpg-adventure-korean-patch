@@ -33,8 +33,8 @@
     },
     "steam-windows": {
       "supported_source": "Steam App ID 1714580, Build ID 23044446, exact source profile required",
-      "runtime": "GAME_CONTENT_PASS_WITH_DISCLOSED_NOT_RUN_LIMITATIONS; BATCH_FRONTEND_STATIC_PASS_WINDOWS_DOUBLE_CLICK_NOT_RUN",
-      "limitations": ["Windows batch frontend double-click runtime was not performed", "physical controller runtime was not performed", "university blackboard screen runtime was not performed"]
+      "runtime": "GAME_CONTENT_PASS_WITH_DISCLOSED_NOT_RUN_LIMITATIONS; BATCH_FRONTEND_DOUBLE_CLICK_USER_PASS",
+      "limitations": ["physical controller runtime was not performed", "university blackboard screen runtime was not performed"]
     }
   },
   "claim_boundary": {

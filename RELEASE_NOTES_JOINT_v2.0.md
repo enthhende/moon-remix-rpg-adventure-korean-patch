@@ -30,7 +30,8 @@
   적용기입니다. x86_64 전용 command 실행만 지원하며 R9 남단 복귀 화면은 별도 미관찰입니다.
 - Steam Windows: Build ID 23044446용 patch-only RC003입니다. `INSTALL_KO.bat`과
   `UNINSTALL_KO.bat`을 더블클릭해 적용·제거하며 PowerShell 명령을 직접 입력하지 않습니다.
-  배치의 실제 Windows 더블클릭과 controller 경로, 대학 칠판 화면은 `NOT_RUN` 제한입니다.
+  배치의 실제 Windows 더블클릭 적용·제거·재적용은 통과했습니다. controller 경로와 대학
+  칠판 화면은 `NOT_RUN` 제한입니다.
 
 보너스 자료관의 사용자 제공 이미지 16장과 그 파생 화면은 제공자의 2026-09-13 공개 배포
 승인에 따라 비상업 팬 패치에 포함합니다. 이는 원작 자료 전반에 대한 별도 권리 부여를
