@@ -1,5 +1,6 @@
 """Joint documentation and PS1 frozen-build boundary tests (no game files)."""
 import argparse
+import json
 from pathlib import Path
 import re
 import sys
@@ -36,6 +37,16 @@ class JointContractTest(unittest.TestCase):
         self.assertIn("합동 릴리스 준비 초안", (ROOT / "README.md").read_text())
         self.assertIn("NOT_RUN", (ROOT / "platforms/steam-windows/README.md").read_text())
         self.assertIn("실행 확인", (ROOT / "platforms/switch/README.md").read_text())
+
+    def test_joint_release_manifest_is_unpublished_and_exact(self):
+        manifest = json.loads((ROOT / "joint_release_manifest.json").read_text())
+        self.assertEqual(manifest["schema"], "moon.joint-public-release-manifest.v1")
+        self.assertEqual(manifest["release"]["status"], "RELEASE_CANDIDATE_NOT_PUBLISHED")
+        self.assertIs(manifest["release"]["publication_authorized"], False)
+        self.assertEqual(len(manifest["assets"]), 7)
+        self.assertEqual(len({row["filename"] for row in manifest["assets"]}), 7)
+        self.assertFalse(any("/" in row["filename"] or "\\" in row["filename"]
+                             for row in manifest["assets"]))
 
 
 if __name__ == "__main__":

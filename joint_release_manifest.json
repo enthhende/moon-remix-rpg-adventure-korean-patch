@@ -1,0 +1,47 @@
+{
+  "schema": "moon.joint-public-release-manifest.v1",
+  "release": {
+    "version": "2.0",
+    "status": "RELEASE_CANDIDATE_NOT_PUBLISHED",
+    "repository": "https://github.com/enthhende/moon-remix-rpg-adventure-korean-patch",
+    "publication_authorized": false
+  },
+  "assets": [
+    {"platform": "ps1", "filename": "Moon_PS1_Korean_Patch_v2.0.zip", "bytes": 1154582, "sha256": "f8a75d10c19a7914c82763136b8e990e4741201bec11ac21ba24286c0a3f0d7e"},
+    {"platform": "ps1", "filename": "Moon_PS1_Korean_Patch_v2.0_Windows_Portable.zip", "bytes": 1304674, "sha256": "68fbb6b87d8613485c5208d43d202897b39f377f2231a6e18e74508f769237c3"},
+    {"platform": "ps1", "filename": "moon_ps1_kr_v2.0_rev1_c5e58d0b.xdelta", "bytes": 1117444, "sha256": "2fa620c700d7b21adb2a35709a67a0bc166da34f3dffbcd04d6036bb5be97b16"},
+    {"platform": "ps1", "filename": "SHA256SUMS.txt", "bytes": 315, "sha256": "9f563db4b9c6e7b4d78b1398e310c58a827caa08c029e87966d477cb0c2df3d0"},
+    {"platform": "steam-windows", "filename": "moon-windows-korean-final-rc-002-release.zip", "bytes": 1587997, "sha256": "77dbf8aeae794581d0b12c084d6dedadfec26afae30179dbefcad5120afbb25a"},
+    {"platform": "steam-macos", "filename": "moon-steam-macos-korean-rc-001.zip", "bytes": 950163, "sha256": "39d8c94ae55c9aa5702d1fe962676effd80547af1cdf2befa8c7b14f16fdec70"},
+    {"platform": "switch", "filename": "0100E1800EFCE000.zip", "bytes": 956335, "sha256": "a0b650c72f7a3f6f11b81f6826dc8aba857a55fe85e9aeaeeeaeaaecb835fc30"}
+  ],
+  "platforms": {
+    "ps1": {
+      "supported_source": "Japan Rev 1 BIN, exact size and SHA-256 checked by the installer",
+      "runtime": "PASS_FOCUSED_O46_ON_MEDNAFEN",
+      "limitations": ["v2.0 additions were not separately verified on original PlayStation hardware"]
+    },
+    "switch": {
+      "supported_source": "Title ID 0100E1800EFCE000, update 1.1.2, Build ID 18D3CEE96E3A274AAD0CA5A140079A45",
+      "runtime": "PASS_V146_IPS32_PLUS_TWO_PACKS_ON_EDEN",
+      "limitations": ["original Nintendo Switch hardware runtime was not performed"]
+    },
+    "steam-macos": {
+      "supported_source": "Steam App ID 1714580, Build ID 23044446, exact source profile required",
+      "runtime": "PASS_EXACT_RUNTIME_CONSUMED_INSTALL_IDENTITY",
+      "limitations": ["x86_64 launch path only", "native arm64, Finder app launch, notarization and Gatekeeper approval are not claimed"]
+    },
+    "steam-windows": {
+      "supported_source": "Steam App ID 1714580, Build ID 23044446, exact source profile required",
+      "runtime": "PASS_WITH_DISCLOSED_NOT_RUN_LIMITATIONS",
+      "limitations": ["physical controller runtime was not performed", "university blackboard screen runtime was not performed"]
+    }
+  },
+  "claim_boundary": {
+    "game_files_included": false,
+    "save_or_cloud_modified_by_release_assembly": false,
+    "public_push": false,
+    "tag_created": false,
+    "release_published": false
+  }
+}
