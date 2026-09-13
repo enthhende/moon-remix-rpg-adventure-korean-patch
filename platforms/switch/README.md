@@ -1,13 +1,18 @@
-# Nintendo Switch 한국어 패치 — 배포 준비 중
+# Nintendo Switch 한국어 패치
 
 대상: 일본판 moon, Title ID `0100E1800EFCE000`, 업데이트 `1.1.2`,
 Build ID `18D3CEE96E3A274AAD0CA5A140079A45`.
 내부 후보 v146은 합동 공개 버전 번호와 별개입니다.
 
-예정 배포물 `0100E1800EFCE000.zip`은 IPS32 1개와 자료 pack 2개 및 사용자 문서로
+배포 후보 `0100E1800EFCE000.zip`은 IPS32 1개와 자료 pack 2개 및 사용자 문서로
 구성합니다. ROM·전체 main·NSP/XCI·키·펌웨어는 포함하지 않습니다.
 
-v146 전체 main 실행 결과는 확보했지만 **IPS32+pack만 설치한 배포 경로는 아직 실행 확인
-대기**입니다. 과거 v144 결과로 대신하지 않습니다. 실제 Switch 하드웨어 확인도 별도입니다.
-이 페이지는 지금 설치해도 된다는 안내가 아닙니다. 배포 확인 후 ZIP 내부의 설치 안내와
-최종 SHA-256을 함께 공개합니다.
+v146의 **IPS32+pack만 설치한 배포 경로**를 Eden에서 확인했습니다. 한국어 타이틀·세이브,
+숨은 메뉴, 자료관 진입·표시·복귀, 용의꼬리 진입과 Plus+Minus 복귀가 정상이고 crash·비정상
+대기는 없었습니다. Atmosphère 실기 직접 검증은 별도 `NOT_RUN`이며 Eden 결과로 대신하지
+않습니다.
+
+ZIP: 956,335 bytes. SHA-256:
+`a0b650c72f7a3f6f11b81f6826dc8aba857a55fe85e9aeaeeeaeaaecb835fc30`.
+아직 합동 GitHub Release가 게시되었다는 뜻은 아닙니다. 실제 게시 뒤 Releases의 checksum과
+ZIP 내부 설치 안내를 함께 확인하세요.

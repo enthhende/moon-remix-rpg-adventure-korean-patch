@@ -12,8 +12,8 @@ PS1·Nintendo Switch·Steam macOS·Steam Windows용 비공식 한국어 패치�
 | 플레이할 게임 | 설치 안내 | 준비 상태 |
 |---|---|---|
 | PlayStation 일본판 Rev 1 | [PS1](platforms/ps1/README.md) | v2.0 일반·Windows Portable 패키지 준비 |
-| Nintendo Switch 업데이트 1.1.2 | [Switch](platforms/switch/README.md) | v146 배포 경로 실행 확인·ZIP 대기 |
-| Steam macOS | [macOS](platforms/steam-macos/README.md) | 본체 적용기·배포 실행 확인 대기 |
+| Nintendo Switch 업데이트 1.1.2 | [Switch](platforms/switch/README.md) | v146 배포 경로 확인·canonical ZIP 준비 |
+| Steam macOS | [macOS](platforms/steam-macos/README.md) | 적용기·exact 설치 결과 실행 확인·ZIP 준비 |
 | Steam Windows | [Windows](platforms/steam-windows/README.md) | RC002 패키지 준비, 알려진 미검증 항목 명시 |
 
 `PS1 Windows Portable`은 **PS1 게임에 패치를 적용하는 Windows용 도구**입니다.
@@ -37,4 +37,5 @@ Issues의 공통 양식에 플랫폼, 패키지 이름·버전, 검사 결과, �
 기존 루트의 `apply_patch.*`, `release_manifest.json`, `docs/INSTALL_KO.md`는 **PS1 전용**입니다.
 [기존 PS1 설명](README_PS1_v2.0.md)과 라이선스 문서는 보존합니다.
 플랫폼별 크레딧·라이선스는 각 배포 패키지를 따르며 PS1 승인 범위를 다른 플랫폼에
-자동으로 확대하지 않습니다. [배포·재현 계약](JOINT_RELEASE_CONTRACT.md)을 참고하세요.
+자동으로 확대하지 않습니다. [배포·재현 계약](JOINT_RELEASE_CONTRACT.md)과
+[합동 v2.0 릴리스 노트](RELEASE_NOTES_JOINT_v2.0.md)를 참고하세요.

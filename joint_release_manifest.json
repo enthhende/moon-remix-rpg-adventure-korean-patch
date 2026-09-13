@@ -12,7 +12,7 @@
     {"platform": "ps1", "filename": "moon_ps1_kr_v2.0_rev1_c5e58d0b.xdelta", "bytes": 1117444, "sha256": "2fa620c700d7b21adb2a35709a67a0bc166da34f3dffbcd04d6036bb5be97b16"},
     {"platform": "ps1", "filename": "SHA256SUMS.txt", "bytes": 315, "sha256": "9f563db4b9c6e7b4d78b1398e310c58a827caa08c029e87966d477cb0c2df3d0"},
     {"platform": "steam-windows", "filename": "moon-windows-korean-final-rc-002-release.zip", "bytes": 1587997, "sha256": "77dbf8aeae794581d0b12c084d6dedadfec26afae30179dbefcad5120afbb25a"},
-    {"platform": "steam-macos", "filename": "moon-steam-macos-korean-rc-001.zip", "bytes": 950163, "sha256": "39d8c94ae55c9aa5702d1fe962676effd80547af1cdf2befa8c7b14f16fdec70"},
+    {"platform": "steam-macos", "filename": "moon-steam-macos-korean-rc-001.zip", "bytes": 950528, "sha256": "8d50e01c759fd0078bc9da95e801888e2c7a26bd3e4db2cd70b4cde9e68c250f"},
     {"platform": "switch", "filename": "0100E1800EFCE000.zip", "bytes": 956335, "sha256": "a0b650c72f7a3f6f11b81f6826dc8aba857a55fe85e9aeaeeeaeaaecb835fc30"}
   ],
   "platforms": {
@@ -29,7 +29,7 @@
     "steam-macos": {
       "supported_source": "Steam App ID 1714580, Build ID 23044446, exact source profile required",
       "runtime": "PASS_EXACT_RUNTIME_CONSUMED_INSTALL_IDENTITY",
-      "limitations": ["x86_64 launch path only", "native arm64, Finder app launch, notarization and Gatekeeper approval are not claimed"]
+      "limitations": ["x86_64 launch path only", "native arm64, Finder app launch, notarization and Gatekeeper approval are not claimed", "R9 south-exit screen was not separately observed and is not claimed as runtime PASS"]
     },
     "steam-windows": {
       "supported_source": "Steam App ID 1714580, Build ID 23044446, exact source profile required",

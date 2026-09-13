@@ -36,7 +36,8 @@ class JointContractTest(unittest.TestCase):
     def test_draft_does_not_claim_all_platforms_released(self):
         self.assertIn("합동 릴리스 준비 초안", (ROOT / "README.md").read_text())
         self.assertIn("NOT_RUN", (ROOT / "platforms/steam-windows/README.md").read_text())
-        self.assertIn("실행 확인", (ROOT / "platforms/switch/README.md").read_text())
+        self.assertIn("실기 직접 검증", (ROOT / "platforms/switch/README.md").read_text())
+        self.assertIn("남단", (ROOT / "platforms/steam-macos/README.md").read_text())
 
     def test_joint_release_manifest_is_unpublished_and_exact(self):
         manifest = json.loads((ROOT / "joint_release_manifest.json").read_text())
@@ -47,6 +48,10 @@ class JointContractTest(unittest.TestCase):
         self.assertEqual(len({row["filename"] for row in manifest["assets"]}), 7)
         self.assertFalse(any("/" in row["filename"] or "\\" in row["filename"]
                              for row in manifest["assets"]))
+        notes = (ROOT / "RELEASE_NOTES_JOINT_v2.0.md").read_text()
+        for row in manifest["assets"]:
+            self.assertIn(row["filename"], notes)
+            self.assertIn(row["sha256"], notes)
 
 
 if __name__ == "__main__":
