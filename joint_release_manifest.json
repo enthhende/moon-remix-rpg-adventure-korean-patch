@@ -13,7 +13,7 @@
     {"platform": "ps1", "filename": "SHA256SUMS.txt", "bytes": 315, "sha256": "9f563db4b9c6e7b4d78b1398e310c58a827caa08c029e87966d477cb0c2df3d0"},
     {"platform": "steam-windows", "filename": "moon-windows-korean-final-rc-002-release.zip", "bytes": 1587997, "sha256": "77dbf8aeae794581d0b12c084d6dedadfec26afae30179dbefcad5120afbb25a"},
     {"platform": "steam-macos", "filename": "moon-steam-macos-korean-rc-001.zip", "bytes": 950528, "sha256": "8d50e01c759fd0078bc9da95e801888e2c7a26bd3e4db2cd70b4cde9e68c250f"},
-    {"platform": "switch", "filename": "0100E1800EFCE000.zip", "bytes": 956335, "sha256": "a0b650c72f7a3f6f11b81f6826dc8aba857a55fe85e9aeaeeeaeaaecb835fc30"}
+    {"platform": "switch", "filename": "0100E1800EFCE000.zip", "bytes": 958467, "sha256": "c62aad4320a74748007ef1faf6c4f08ccfe1a25f48ff4d19edfe51886ce8d8d0"}
   ],
   "platforms": {
     "ps1": {

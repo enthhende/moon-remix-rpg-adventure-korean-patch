@@ -12,7 +12,7 @@
 | PS1/Windows 적용기 | `Moon_PS1_Korean_Patch_v2.0_Windows_Portable.zip` | 1,304,674 | `68fbb6b87d8613485c5208d43d202897b39f377f2231a6e18e74508f769237c3` |
 | PS1 직접 적용 | `moon_ps1_kr_v2.0_rev1_c5e58d0b.xdelta` | 1,117,444 | `2fa620c700d7b21adb2a35709a67a0bc166da34f3dffbcd04d6036bb5be97b16` |
 | PS1 checksum | `SHA256SUMS.txt` | 315 | `9f563db4b9c6e7b4d78b1398e310c58a827caa08c029e87966d477cb0c2df3d0` |
-| Switch | `0100E1800EFCE000.zip` | 956,335 | `a0b650c72f7a3f6f11b81f6826dc8aba857a55fe85e9aeaeeeaeaaecb835fc30` |
+| Switch | `0100E1800EFCE000.zip` | 958,467 | `c62aad4320a74748007ef1faf6c4f08ccfe1a25f48ff4d19edfe51886ce8d8d0` |
 | Steam macOS | `moon-steam-macos-korean-rc-001.zip` | 950,528 | `8d50e01c759fd0078bc9da95e801888e2c7a26bd3e4db2cd70b4cde9e68c250f` |
 | Steam Windows | `moon-windows-korean-final-rc-002-release.zip` | 1,587,997 | `77dbf8aeae794581d0b12c084d6dedadfec26afae30179dbefcad5120afbb25a` |
 
@@ -30,6 +30,10 @@
   적용기입니다. x86_64 전용 command 실행만 지원하며 R9 남단 복귀 화면은 별도 미관찰입니다.
 - Steam Windows: Build ID 23044446용 patch-only RC002입니다. 실제 controller 경로와 대학
   칠판 화면은 공개된 `NOT_RUN` 제한입니다.
+
+보너스 자료관의 사용자 제공 이미지 16장과 그 파생 화면은 제공자의 2026-09-13 공개 배포
+승인에 따라 비상업 팬 패치에 포함합니다. 이는 원작 자료 전반에 대한 별도 권리 부여를
+뜻하지 않습니다.
 
 세이브와 Cloud는 패치 설치 대상이 아닙니다. 게임 본체·ROM·전체 실행 파일·키·세이브는
 어느 자산에도 포함하지 않습니다. 이 문서는 게시 전 후보이며 실제 다운로드는 GitHub
