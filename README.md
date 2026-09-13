@@ -21,7 +21,11 @@ PS1·Nintendo Switch·Steam macOS·Steam Windows용 비공식 한국어 패치�
 Steam Windows판 패치와 다릅니다. 다운로드는 `Code → Download ZIP`이 아닌
 [Releases](https://github.com/enthhende/moon-remix-rpg-adventure-korean-patch/releases)에서
 선택하세요. Steam 파일명의 `rc`와 Switch 내부 번호 `v146`은 검증된 패키지 식별자입니다.
-합동 공개 버전은 v2.0이며 파일명을 바꾸거나 다른 후보로 재패키징하지 않았습니다.
+합동 공개 버전은 v2.0이며 각 자산의 정확한 크기와 SHA-256은 공개 manifest를 따릅니다.
+
+Switch 패키지에는 moon 전용 언어 설정이 포함되어 있어 본체 언어가 한국어여도 그대로
+설치할 수 있습니다. 같은 Title ID의 `config.ini`를 이미 사용 중이면 먼저
+[Switch 설치 안내](platforms/switch/README.md)의 병합 방법을 확인하세요.
 
 ## 원본과 저장 데이터
 

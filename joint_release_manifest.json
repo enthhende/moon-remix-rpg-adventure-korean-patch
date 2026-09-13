@@ -16,7 +16,7 @@
     {"platform": "ps1", "filename": "SHA256SUMS.txt", "bytes": 315, "sha256": "9f563db4b9c6e7b4d78b1398e310c58a827caa08c029e87966d477cb0c2df3d0"},
     {"platform": "steam-windows", "filename": "moon-windows-korean-final-rc-003-release.zip", "bytes": 1589924, "sha256": "c0e25acef9a5a156a309205b4878549a05ac1f2b221ecf577081859e4d3c0f09"},
     {"platform": "steam-macos", "filename": "moon-steam-macos-korean-rc-001.zip", "bytes": 950528, "sha256": "8d50e01c759fd0078bc9da95e801888e2c7a26bd3e4db2cd70b4cde9e68c250f"},
-    {"platform": "switch", "filename": "0100E1800EFCE000.zip", "bytes": 958467, "sha256": "c62aad4320a74748007ef1faf6c4f08ccfe1a25f48ff4d19edfe51886ce8d8d0"}
+    {"platform": "switch", "filename": "0100E1800EFCE000.zip", "bytes": 958838, "sha256": "21a8ea11d74a9af4f2be9e29c7258932e8e46d24168d0d29c2c723b321656c32"}
   ],
   "platforms": {
     "ps1": {
@@ -27,6 +27,7 @@
     "switch": {
       "supported_source": "Title ID 0100E1800EFCE000, update 1.1.2, Build ID 18D3CEE96E3A274AAD0CA5A140079A45",
       "runtime": "PASS_V146_IPS32_PLUS_TWO_PACKS_ON_EDEN",
+      "locale_configuration": "TITLE_ONLY_OVERRIDE_LANGUAGE_JA_CONFIG_INCLUDED_STATIC_PASS",
       "limitations": ["original Nintendo Switch hardware runtime was not performed"]
     },
     "steam-macos": {
