@@ -16,3 +16,6 @@ PowerShell 명령을 직접 입력할 필요는 없습니다. 제거는 게임�
 실제 컨트롤러 조작 및 대학 칠판 화면은 **미검증(NOT_RUN)**입니다. ZIP의
 `KNOWN_LIMITATIONS.json`을 확인하세요. 저장 데이터나 Cloud 설정을 자동 변경하지 않습니다.
 배치파일의 정적·재현 빌드와 실제 Windows 더블클릭 적용·제거·재적용 확인을 통과했습니다.
+
+숨겨진 `미사용 개발 자료` 메뉴는 최초 `PUSH START` 화면이 아니라, Enter로 이동한
+`GAME START / CONTINUE` 선택 화면에서 키보드 `N`을 누르면 열립니다.

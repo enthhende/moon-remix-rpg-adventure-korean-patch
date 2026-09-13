@@ -12,6 +12,9 @@ Steam 설치 원본·세이브·Cloud 설정은 건드리지 않습니다. exact
 Steam API 오류 없음, 대표 한국어 자료관·진입 문구, 정상 종료·무크래시를 확인했습니다.
 R9 남단 복귀 화면은 별도 관찰하지 않았으므로 runtime PASS로 주장하지 않습니다.
 
+숨겨진 `미사용 개발 자료` 메뉴는 최초 `PUSH START` 화면이 아니라, Enter로 이동한
+`GAME START / CONTINUE` 선택 화면에서 키보드 `N`을 누르면 열립니다.
+
 Finder의 app 더블클릭, Steam 원본 Play 버튼으로 별도 복사본 실행, Gatekeeper/notarization,
 arm64 원생 실행은 지원 주장 범위가 아닙니다. 게임 전체 앱이나 개발용 디버거·배속 도구는
 배포하지 않습니다. ZIP 안의 설치 안내와 제공된 command 실행 경로를 따르세요.

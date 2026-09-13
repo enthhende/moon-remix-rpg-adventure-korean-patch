@@ -21,6 +21,18 @@
 참고하세요.
 v1.0/v1.1 패치 결과에 덧붙이지 말고 깨끗한 일본판 Rev 1 원본에 직접 적용하세요.
 
+## 숨겨진 메뉴 진입 방법
+
+숨겨진 메뉴는 최초 `PUSH START` 화면에서 바로 열리지 않습니다. 먼저 일반 입력으로
+`GAME START / CONTINUE` 선택 화면까지 이동한 뒤 다음 키를 누르세요.
+
+- PS1: `SELECT`
+- Switch: `-`
+- Steam macOS/Windows: 키보드 `N`
+
+주의 안내를 확인하면 `미사용 개발 자료` 메뉴로 들어갑니다. 추가 자료에는 본편 결말
+스포일러가 있으므로 본편을 끝낸 뒤 감상하는 것을 권합니다.
+
 ## 다운로드와 적용
 
 - PS1: Windows에서는 `Moon_PS1_Korean_Patch_v2.0_Windows_Portable.zip`을 풀고
