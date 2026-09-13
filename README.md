@@ -38,6 +38,5 @@ Issues의 공통 양식에 플랫폼, 패키지 이름·버전, 검사 결과, �
 
 기존 루트의 `apply_patch.*`, `release_manifest.json`, `docs/INSTALL_KO.md`는 **PS1 전용**입니다.
 [기존 PS1 설명](README_PS1_v2.0.md)과 라이선스 문서는 보존합니다.
-플랫폼별 크레딧·라이선스는 각 배포 패키지를 따르며 PS1 승인 범위를 다른 플랫폼에
-자동으로 확대하지 않습니다. [배포·재현 계약](JOINT_RELEASE_CONTRACT.md)과
+플랫폼별 크레딧·라이선스는 각 배포 패키지에서 확인할 수 있습니다. [배포·재현 계약](JOINT_RELEASE_CONTRACT.md)과
 [합동 v2.0 릴리스 노트](RELEASE_NOTES_JOINT_v2.0.md)를 참고하세요.

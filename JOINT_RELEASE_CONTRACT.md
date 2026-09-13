@@ -34,5 +34,5 @@ public manifest의 `RELEASE_ARTIFACTS_APPROVED`는 배포 파일의 검증과 �
 소유합니다. 따라서 게시 전후에 같은 manifest와 checksum으로 배포 파일을 검사할 수 있습니다.
 
 현재 루트 `LICENSE`, `LEGAL.md`, `LICENSING.md`, `CREDITS.md`와
-`release_manifest.json`은 보존된 PS1 범위입니다. 새 플랫폼의 권리·동의 상태가 자동으로
-승인되는 것은 아니며 각 패키지의 라이선스 문서를 개별 검수합니다.
+`release_manifest.json`은 PS1 범위입니다. 다른 플랫폼의 크레딧·라이선스는 각 배포
+패키지에 포함된 문서를 확인하세요.

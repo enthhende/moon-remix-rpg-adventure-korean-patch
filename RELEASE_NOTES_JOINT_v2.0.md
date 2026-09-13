@@ -18,7 +18,7 @@
 - 영문·특수문자 글리프를 조정하고 MD 제목·설명을 실제 글자 폭에 맞춰 가운데 정렬했습니다.
 
 상세 내용은 [PS1 v2.0 릴리스 노트](https://github.com/enthhende/moon-remix-rpg-adventure-korean-patch/blob/v2.0/RELEASE_NOTES_v2.0.md)를
-참고하세요. PS1은 검증된 O46 최종판이며, 이후 기각된 O47/O48 사당 전환 실험은 포함하지 않습니다.
+참고하세요.
 v1.0/v1.1 패치 결과에 덧붙이지 말고 깨끗한 일본판 Rev 1 원본에 직접 적용하세요.
 
 ## 다운로드와 적용
@@ -30,7 +30,7 @@ v1.0/v1.1 패치 결과에 덧붙이지 말고 깨끗한 일본판 Rev 1 원본�
 - Steam Windows: Windows ZIP을 게임의 로컬 파일 폴더에 풀고 생성된 폴더 안의
   `INSTALL_KO.bat`을 더블클릭합니다. 제거는 게임 종료 후 `UNINSTALL_KO.bat`입니다.
 
-[플랫폼별 설치 안내](https://github.com/enthhende/moon-remix-rpg-adventure-korean-patch/tree/v2.0/platforms)를
+[플랫폼별 설치 안내](https://github.com/enthhende/moon-remix-rpg-adventure-korean-patch/tree/main/platforms)를
 먼저 확인하세요. 아래 Assets에서 받으며 `Source code (zip/tar.gz)`는 패치 패키지가 아닙니다.
 파일명의 `rc`와 Switch 내부 `v146`은 동결된 패키지 식별자이며 합동 공개 버전은 v2.0입니다.
 
@@ -48,7 +48,7 @@ v1.0/v1.1 패치 결과에 덧붙이지 말고 깨끗한 일본판 Rev 1 원본�
 
 `joint_release_manifest.json`은 위 자산의 플랫폼·크기·SHA-256과 검증 한계를 기록합니다.
 `JOINT_SHA256SUMS.txt`는 위 7개 자산과 public manifest를 검사하며 자기 자신은 포함하지
-않습니다. 기존 `SHA256SUMS.txt`는 PS1 전용 파일로 그대로 보존됩니다.
+않습니다. `SHA256SUMS.txt`는 PS1 전용 체크섬입니다.
 
 ## 플랫폼별 핵심
 
@@ -56,17 +56,14 @@ v1.0/v1.1 패치 결과에 덧붙이지 말고 깨끗한 일본판 Rev 1 원본�
   포함합니다. v2.0 추가 콘텐츠는 Mednafen PSX에서 확인했습니다. DuckStation·PS2 POPS는
   v1.1 당시 기록이며 v2.0 추가 콘텐츠는 별도 미검증입니다. 원본 PS1·PSP POPS도 미검증입니다.
 - Switch: 업데이트 1.1.2의 IPS32 1개와 pack 2개만 배포합니다. Eden의 실제 배포 형태
-  runtime은 통과했지만 Atmosphère 실기 직접 검증은 `NOT_RUN`입니다.
+  실행을 확인했습니다. Atmosphère 실기에서는 직접 검증하지 않았습니다.
 - Steam macOS: Build ID 23044446의 정확한 원본으로 새 복사본을 만드는 patch-only
-  적용기입니다. x86_64 전용 command 실행만 지원하며 R9 남단 복귀 화면은 별도 미관찰입니다.
+  적용기입니다. x86_64 전용 command 실행만 지원하며, `소년과 할머니`의 남쪽 출구에서
+  타이틀로 복귀하는 화면은 별도로 확인하지 않았습니다.
 - Steam Windows: Build ID 23044446용 patch-only RC003입니다. `INSTALL_KO.bat`과
   `UNINSTALL_KO.bat`을 더블클릭해 적용·제거하며 PowerShell 명령을 직접 입력하지 않습니다.
-  배치의 실제 Windows 더블클릭 적용·제거·재적용은 통과했습니다. controller 경로와 대학
-  칠판 화면은 `NOT_RUN` 제한입니다.
-
-보너스 자료관의 사용자 제공 이미지 16장과 그 파생 화면은 제공자의 2026-09-13 공개 배포
-승인에 따라 비상업 팬 패치에 포함합니다. 이는 원작 자료 전반에 대한 별도 권리 부여를
-뜻하지 않습니다.
+  배치파일을 통한 설치·제거·재설치를 확인했습니다. 실제 컨트롤러 조작과 대학 칠판
+  화면은 검증하지 않았습니다.
 
 세이브와 Cloud는 패치 설치 대상이 아닙니다. 게임 본체·ROM·전체 실행 파일·키·세이브는
 어느 자산에도 포함하지 않습니다. Windows↔macOS 세이브 로드·재저장 확인은 모든 Cloud
