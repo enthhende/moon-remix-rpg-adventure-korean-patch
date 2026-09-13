@@ -4,22 +4,24 @@ PS1·Nintendo Switch·Steam macOS·Steam Windows용 비공식 한국어 패치�
 합동 배포 저장소입니다. 게임 본체·ROM·BIOS·키·세이브는 제공하지 않습니다.
 각 플랫폼에 맞는 정품 원본이 필요하며, 다른 플랫폼의 패치를 섞어서 적용할 수 없습니다.
 
-> 합동 릴리스 준비 초안입니다. 아래 준비 상태를 게시 완료로 해석하지 마세요.
-> 기존 공개 v1.0/v1.1은 PS1판입니다. 새 네 플랫폼 릴리스의 공개 버전과 게시일은 미확정입니다.
+합동 v2.0은 PS1 v2.0과 Switch·Steam macOS·Steam Windows 패치를 함께 제공합니다.
+[v2.0 다운로드](https://github.com/enthhende/moon-remix-rpg-adventure-korean-patch/releases/tag/v2.0)에서
+사용할 플랫폼의 파일 하나를 선택하세요. 기존 v1.0/v1.1은 PS1 전용 릴리스입니다.
 
 ## 플랫폼을 먼저 고르세요
 
-| 플레이할 게임 | 설치 안내 | 준비 상태 |
+| 플레이할 게임 | 설치 안내 | 다운로드할 파일 |
 |---|---|---|
-| PlayStation 일본판 Rev 1 | [PS1](platforms/ps1/README.md) | v2.0 일반·Windows Portable 패키지 준비 |
-| Nintendo Switch 업데이트 1.1.2 | [Switch](platforms/switch/README.md) | v146 배포 경로 확인·canonical ZIP 준비 |
-| Steam macOS | [macOS](platforms/steam-macos/README.md) | 적용기·exact 설치 결과 실행 확인·ZIP 준비 |
-| Steam Windows | [Windows](platforms/steam-windows/README.md) | RC002 패키지 준비, 알려진 미검증 항목 명시 |
+| PlayStation 일본판 Rev 1 | [PS1](platforms/ps1/README.md) | `Moon_PS1_Korean_Patch_v2.0_Windows_Portable.zip` (Windows 적용기) / `Moon_PS1_Korean_Patch_v2.0.zip` (macOS·Linux 적용기) |
+| Nintendo Switch 업데이트 1.1.2 | [Switch](platforms/switch/README.md) | `0100E1800EFCE000.zip` |
+| Steam macOS | [macOS](platforms/steam-macos/README.md) | `moon-steam-macos-korean-rc-001.zip` |
+| Steam Windows | [Windows](platforms/steam-windows/README.md) | `moon-windows-korean-final-rc-003-release.zip` |
 
 `PS1 Windows Portable`은 **PS1 게임에 패치를 적용하는 Windows용 도구**입니다.
 Steam Windows판 패치와 다릅니다. 다운로드는 `Code → Download ZIP`이 아닌
 [Releases](https://github.com/enthhende/moon-remix-rpg-adventure-korean-patch/releases)에서
-해당 릴리스가 실제 게시된 것을 확인한 후 선택하세요.
+선택하세요. Steam 파일명의 `rc`와 Switch 내부 번호 `v146`은 검증된 패키지 식별자입니다.
+합동 공개 버전은 v2.0이며 파일명을 바꾸거나 다른 후보로 재패키징하지 않았습니다.
 
 ## 원본과 저장 데이터
 

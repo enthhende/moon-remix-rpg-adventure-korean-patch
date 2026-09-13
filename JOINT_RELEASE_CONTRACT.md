@@ -1,7 +1,7 @@
-# 합동 배포·재현 계약 (준비 초안)
+# 합동 배포·재현 계약
 
 이 저장소는 네 플랫폼의 배포 창구입니다. 개발 저장소를 합치거나 플랫폼별 검증을
-서로 승계하지 않습니다. 공개 버전·태그·릴리스 게시에는 별도 최종 검토가 필요합니다.
+서로 승계하지 않습니다. 합동 공개 버전은 v2.0이며 플랫폼 자산의 검증된 바이트를 유지합니다.
 
 ## 기존 PS1 ZIP 보존
 
@@ -24,10 +24,14 @@ PS1 ZIP의 빌드 소스는 커밋 `7ed58079145a8ddd0236d338ad3e0a4e765d8558`입
 - 기존 v1.0/v1.1 태그·릴리스와 PS1 이력 보존
 - 전체 게임 파일·개인 경로·저장 데이터·디버그 로그는 Git과 Release 자산에서 제외
 
-현재 게시 후보는 동결된 플랫폼 자산 7개와 `joint_release_manifest.json`,
+배포 대상은 동결된 플랫폼 자산 7개와 `joint_release_manifest.json`,
 `JOINT_SHA256SUMS.txt`의 총 9개입니다. Switch 실기, macOS R9 남단 화면, Windows 물리
 controller·대학 칠판 화면은 각각 별도 미관찰 제한이며 다른 정적·에뮬레이터·플랫폼 PASS로
 바꾸지 않습니다.
+
+public manifest의 `RELEASE_ARTIFACTS_APPROVED`는 배포 파일의 검증과 공개 승인을 뜻합니다.
+실제 게시 상태는 [v2.0 Release](https://github.com/enthhende/moon-remix-rpg-adventure-korean-patch/releases/tag/v2.0)가
+소유합니다. 따라서 게시 전후에 같은 manifest와 checksum으로 배포 파일을 검사할 수 있습니다.
 
 현재 루트 `LICENSE`, `LEGAL.md`, `LICENSING.md`, `CREDITS.md`와
 `release_manifest.json`은 보존된 PS1 범위입니다. 새 플랫폼의 권리·동의 상태가 자동으로

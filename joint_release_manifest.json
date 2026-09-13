@@ -2,9 +2,12 @@
   "schema": "moon.joint-public-release-manifest.v1",
   "release": {
     "version": "2.0",
-    "status": "RELEASE_CANDIDATE_NOT_PUBLISHED",
+    "status": "RELEASE_ARTIFACTS_APPROVED",
     "repository": "https://github.com/enthhende/moon-remix-rpg-adventure-korean-patch",
-    "publication_authorized": false
+    "publication_authorized": true,
+    "tag": "v2.0",
+    "url": "https://github.com/enthhende/moon-remix-rpg-adventure-korean-patch/releases/tag/v2.0",
+    "status_scope": "Artifact verification and publication approval; live publication state is owned by the linked GitHub Release"
   },
   "assets": [
     {"platform": "ps1", "filename": "Moon_PS1_Korean_Patch_v2.0.zip", "bytes": 1154582, "sha256": "f8a75d10c19a7914c82763136b8e990e4741201bec11ac21ba24286c0a3f0d7e"},
@@ -39,9 +42,6 @@
   },
   "claim_boundary": {
     "game_files_included": false,
-    "save_or_cloud_modified_by_release_assembly": false,
-    "public_push": false,
-    "tag_created": false,
-    "release_published": false
+    "save_or_cloud_modified_by_release_assembly": false
   }
 }

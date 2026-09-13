@@ -4,9 +4,9 @@
 SHA-256: `828189dd7cba0211585c9e06a99936924f0fb883da428525f1fc73790fb403f2`.
 최종 v2.0 출력: `c5e58d0b9030a0f8683126f2866b633c70e6ea5e12c699524dfece1c67fcc43d`.
 
-준비된 파일은 `Moon_PS1_Korean_Patch_v2.0.zip`과
+배포 파일은 `Moon_PS1_Korean_Patch_v2.0.zip`과
 `Moon_PS1_Korean_Patch_v2.0_Windows_Portable.zip`입니다. 후자는 Windows에서 PS1 이미지를
-패치하는 도구이며 Steam판용이 아닙니다. 아직 합동 릴리스 게시를 뜻하지 않습니다.
+패치하는 도구이며 Steam판용이 아닙니다.
 
 [설치 안내](../../docs/INSTALL_KO.md), [상세 설명](../../README_PS1_v2.0.md),
 [호환성](../../docs/COMPATIBILITY.md)을 따르세요. v2.0 Mednafen 검증과 v1.1의 외부 환경

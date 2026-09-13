@@ -3,9 +3,9 @@
 Steam App ID `1714580`, Build ID `23044446` Windows 원본용입니다.
 macOS 원본 또는 이미 패치된 파일에는 적용할 수 없습니다.
 
-준비된 ZIP: `moon-windows-korean-final-rc-003-release.zip` (1,589,924 bytes).
+배포 ZIP: `moon-windows-korean-final-rc-003-release.zip` (1,589,924 bytes).
 SHA-256: `c0e25acef9a5a156a309205b4878549a05ac1f2b221ecf577081859e4d3c0f09`.
-RC003는 내부 후보 식별자이며 이 문서는 아직 합동 공개 완료를 뜻하지 않습니다.
+RC003는 검증된 패키지 식별자이며 합동 공개 버전은 v2.0입니다.
 
 Steam에서 moon의 로컬 파일 폴더를 연 뒤 그 위치에 ZIP을 압축 해제하고, 생성된
 `moon-windows-korean-final-rc-003` 폴더 안의 `INSTALL_KO.bat`을 더블클릭합니다.
