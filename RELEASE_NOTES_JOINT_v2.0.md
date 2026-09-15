@@ -5,7 +5,7 @@
 [moon-korean-eden-v2.0.zip](https://github.com/enthhende/moon-remix-rpg-adventure-korean-patch/releases/download/v2.0/moon-korean-eden-v2.0.zip)을 추가했습니다.
 Switch판 **업데이트 1.1.2**가 필요하며, 패치 데이터는 기존 Switch ZIP의 v146과 동일합니다.
 
-- **Android / 아인토르**: ZIP 풀기 → moon 길게 누르기 → 추가 콘텐츠 → 설치 → 모드/치트 →
+- **Android / Eden 환경**: ZIP 풀기 → moon 길게 누르기 → 추가 콘텐츠 → 설치 → 모드/치트 →
   `exefs`와 `romfs`가 바로 보이는 `moon-korean` 폴더 선택.
 - **PC**: moon 우클릭 → Open Mod Data Location → ZIP의 `moon-korean` 폴더 넣기.
 - 공통: 업데이트와 모드 활성화, 게임 시스템 언어 **Japanese**, 게임 완전 종료 후 재실행.
@@ -14,8 +14,8 @@ Switch판 **업데이트 1.1.2**가 필요하며, 패치 데이터는 기존 Swi
 [Eden 설치 안내](https://github.com/enthhende/moon-remix-rpg-adventure-korean-patch/blob/main/platforms/switch/EDEN_INSTALL_KO.md) ·
 [Switch 실기 설치 안내](https://github.com/enthhende/moon-remix-rpg-adventure-korean-patch/blob/main/platforms/switch/README.md)
 
-추가 ZIP: 2,745,833 bytes / SHA-256
-`31e315f47d17b6b429250df58cb1b6218dbc1af9143cc1272b751662c4581a4c`.
+추가 ZIP: 2,745,832 bytes / SHA-256
+`a04c63b3ffb450048d140321c084cc5f5a9a8af713f424fb8aedbef5b296777e`.
 추가 자산은 `EDEN_SHA256SUMS.txt`와 main의 `platforms/switch/eden_release_manifest.json`으로 확인합니다.
 아래 최초 합동 배포 manifest·checksum의 7개 자산 범위는 그대로 유지됩니다.
 크레딧·OFL 동봉과 3개 패치 데이터 동일성, ZIP 재현성을 검증했습니다.

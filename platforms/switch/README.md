@@ -3,7 +3,7 @@
 ## 사용할 기기에 맞는 파일 선택
 
 - **Switch 실기 / Atmosphère**: [0100E1800EFCE000.zip](https://github.com/enthhende/moon-remix-rpg-adventure-korean-patch/releases/download/v2.0/0100E1800EFCE000.zip). 아래 안내를 따르세요.
-- **Eden PC / Android / 아인토르**: [moon-korean-eden-v2.0.zip](https://github.com/enthhende/moon-remix-rpg-adventure-korean-patch/releases/download/v2.0/moon-korean-eden-v2.0.zip). [Eden 전용 설치 안내](EDEN_INSTALL_KO.md)를 따르세요.
+- **Eden PC / Android 환경**: [moon-korean-eden-v2.0.zip](https://github.com/enthhende/moon-remix-rpg-adventure-korean-patch/releases/download/v2.0/moon-korean-eden-v2.0.zip). [Eden 전용 설치 안내](EDEN_INSTALL_KO.md)를 따르세요.
 
 두 ZIP의 한글 패치 데이터는 동일하며 설치 경로와 언어 설정 방법이 다릅니다.
 

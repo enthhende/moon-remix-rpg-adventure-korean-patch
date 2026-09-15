@@ -2,8 +2,8 @@
   "schema": "moon.eden-release-manifest.v1",
   "version": "2.0",
   "filename": "moon-korean-eden-v2.0.zip",
-  "bytes": 2745833,
-  "sha256": "31e315f47d17b6b429250df58cb1b6218dbc1af9143cc1272b751662c4581a4c",
+  "bytes": 2745832,
+  "sha256": "a04c63b3ffb450048d140321c084cc5f5a9a8af713f424fb8aedbef5b296777e",
   "source_asset": {
     "url": "https://github.com/enthhende/moon-remix-rpg-adventure-korean-patch/releases/download/v2.0/0100E1800EFCE000.zip",
     "sha256": "21a8ea11d74a9af4f2be9e29c7258932e8e46d24168d0d29c2c723b321656c32"

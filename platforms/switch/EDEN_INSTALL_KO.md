@@ -5,7 +5,7 @@
 준비물은 Eden에서 실행되는 moon 본편과 **업데이트 1.1.2**입니다.
 이 ZIP에는 한글 패치만 들어 있습니다. 게임을 다시 합치거나 리팩할 필요가 없습니다.
 
-## Android · 아인토르
+## Android / Eden 환경
 
 1. ZIP을 다운로드하고 파일 앱에서 압축을 풉니다.
 2. Eden 게임 목록에서 **moon을 길게 누르고 → 추가 콘텐츠(Add-ons) → 설치 → 모드/치트**를 선택합니다.
@@ -95,7 +95,7 @@ Eden의 추가 콘텐츠에서 `moon-korean`을 끄면 비활성화됩니다. �
 패치 데이터 3개는 공개 v2.0 Switch ZIP의 v146 IPS32·pack과 바이트 단위로 같습니다.
 기존 macOS Eden에서 이 3개 파일을 설치한 배포 경로의 한국어 타이틀·세이브·숨겨진 메뉴·
 자료관·용의꼬리 진입과 복귀를 확인했습니다. 이번 ZIP은 경로와 문서를 정리한 패키지입니다.
-새 ZIP의 Android 설치 UI 및 아인토르 실제 게임 실행은 별도로 미검증이며,
+새 ZIP의 Android / Eden 환경 설치 UI 및 실제 게임 실행은 별도로 미검증이며,
 모든 Eden 버전이나 Switch 실기에서의 실행을 보증하는 것은 아닙니다.
 
 - [공개 v2.0 다운로드](https://github.com/enthhende/moon-remix-rpg-adventure-korean-patch/releases/tag/v2.0)
