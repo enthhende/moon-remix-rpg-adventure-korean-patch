@@ -1,0 +1,31 @@
+{
+  "schema": "moon.eden-release-manifest.v1",
+  "version": "2.0",
+  "filename": "moon-korean-eden-v2.0.zip",
+  "bytes": 2745833,
+  "sha256": "31e315f47d17b6b429250df58cb1b6218dbc1af9143cc1272b751662c4581a4c",
+  "source_asset": {
+    "url": "https://github.com/enthhende/moon-remix-rpg-adventure-korean-patch/releases/download/v2.0/0100E1800EFCE000.zip",
+    "sha256": "21a8ea11d74a9af4f2be9e29c7258932e8e46d24168d0d29c2c723b321656c32"
+  },
+  "title_id": "0100E1800EFCE000",
+  "update": "1.1.2",
+  "build_id": "18D3CEE96E3A274AAD0CA5A140079A45",
+  "game_system_language": "Japanese",
+  "mod_directory": "load/0100E1800EFCE000/moon-korean",
+  "payload_sha256": {
+    "exefs/18D3CEE96E3A274AAD0CA5A140079A45.ips": "ad17aee1ad5b0421f388822bc9565f66f37fdd7d807b4ab5bbf1f7015ada60c3",
+    "romfs/Data/StreamingAssets/moon_bonus_gallery.pack": "efac73730ca9bbc40206ee66577acf2587e719c90aec503b01f39a5fc0daf982",
+    "romfs/moon_bonus_notice.pack": "a4c94bf1a3f92f9116aa0deef6e526a1292437098675d0c3d080d066b598fdf3"
+  },
+  "verification": {
+    "deterministic_rebuild": "PASS",
+    "payload_identity_with_public_switch_release": "PASS",
+    "zip_layout_and_checksums": "PASS",
+    "runtime_evidence": "EXISTING_MACOS_EDEN_V146_IPS32_PLUS_TWO_PACKS",
+    "android_installer_and_game_runtime": "NOT_RUN",
+    "switch_hardware_runtime": "NOT_RUN"
+  },
+  "license": "Original Switch credits and Galmuri OFL-1.1 retained byte-identically",
+  "publication": "Supplement to v2.0; original joint manifest and assets preserved"
+}

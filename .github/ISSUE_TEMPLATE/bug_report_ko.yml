@@ -14,7 +14,9 @@ body:
       label: 게임 플랫폼
       options:
         - PS1
-        - Nintendo Switch
+        - Nintendo Switch (Atmosphere 실기)
+        - Nintendo Switch (Eden PC)
+        - Nintendo Switch (Eden Android)
         - Steam macOS
         - Steam Windows
     validations:

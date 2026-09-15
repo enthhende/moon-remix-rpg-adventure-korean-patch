@@ -36,3 +36,22 @@ public manifest의 `RELEASE_ARTIFACTS_APPROVED`는 배포 파일의 검증과 �
 현재 루트 `LICENSE`, `LEGAL.md`, `LICENSING.md`, `CREDITS.md`와
 `release_manifest.json`은 PS1 범위입니다. 다른 플랫폼의 크레딧·라이선스는 각 배포
 패키지에 포함된 문서를 확인하세요.
+
+## v2.0 Eden 추가 배포
+
+Eden 전용 ZIP과 `EDEN_SHA256SUMS.txt`를 기존 v2.0 Release에 추가합니다.
+위의 최초 9개 자산과 `joint_release_manifest.json`은 당시 검증값을 보존하며,
+추가 자산은 `platforms/switch/eden_release_manifest.json`이 소유합니다.
+기존 태그를 이동하지 않고 현재 main의 안내·builder·원장을 커밋합니다.
+
+재현: 공개 v2.0 `0100E1800EFCE000.zip`을 받아 다음 명령을 실행합니다.
+
+```sh
+python3 scripts/build_eden_bundle.py --switch-zip 0100E1800EFCE000.zip --out-dir dist
+```
+
+builder는 원본 ZIP과 payload 해시를 검증하고 IPS32·pack·크레딧·OFL을 원본 그대로
+Eden 폴더에 배치합니다. 설치 안내와 내부 체크섬을 함께 넣으며 실행 파일·게임·키·세이브는
+입력받지 않습니다. 파일 순서·시간·권한과 무압축 ZIP 저장을 고정해 재현성을 확보합니다.
+Git에는 builder·문서·원장을, Release에는 ZIP·외부 checksum을 게시합니다.
+새 ZIP의 정적 무결성 검증과 기존 macOS Eden 실행 증거는 Android 설치·실행의 검증과 구분합니다.

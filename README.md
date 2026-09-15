@@ -13,7 +13,8 @@ PS1·Nintendo Switch·Steam macOS·Steam Windows용 비공식 한국어 패치�
 | 플레이할 게임 | 설치 안내 | 다운로드할 파일 |
 |---|---|---|
 | PlayStation 일본판 Rev 1 | [PS1](platforms/ps1/README.md) | `Moon_PS1_Korean_Patch_v2.0_Windows_Portable.zip` (Windows 적용기) / `Moon_PS1_Korean_Patch_v2.0.zip` (macOS·Linux 적용기) |
-| Nintendo Switch 업데이트 1.1.2 | [Switch](platforms/switch/README.md) | `0100E1800EFCE000.zip` |
+| Nintendo Switch 실기 · 업데이트 1.1.2 | [Switch 실기](platforms/switch/README.md) | `0100E1800EFCE000.zip` |
+| Eden PC·Android에서 Switch판 실행 · 업데이트 1.1.2 | [Eden](platforms/switch/EDEN_INSTALL_KO.md) | `moon-korean-eden-v2.0.zip` |
 | Steam macOS | [macOS](platforms/steam-macos/README.md) | `moon-steam-macos-korean-rc-001.zip` |
 | Steam Windows | [Windows](platforms/steam-windows/README.md) | `moon-windows-korean-final-rc-003-release.zip` |
 
@@ -23,9 +24,15 @@ Steam Windows판 패치와 다릅니다. 다운로드는 `Code → Download ZIP`
 선택하세요. Steam 파일명의 `rc`와 Switch 내부 번호 `v146`은 검증된 패키지 식별자입니다.
 합동 공개 버전은 v2.0이며 각 자산의 정확한 크기와 SHA-256은 공개 manifest를 따릅니다.
 
-Switch 패키지에는 moon 전용 언어 설정이 포함되어 있어 본체 언어가 한국어여도 그대로
+Switch 실기용 패키지에는 moon 전용 언어 설정이 포함되어 있어 본체 언어가 한국어여도 그대로
 설치할 수 있습니다. 같은 Title ID의 `config.ini`를 이미 사용 중이면 먼저
 [Switch 설치 안내](platforms/switch/README.md)의 병합 방법을 확인하세요.
+
+Eden용은 ZIP을 푼 `moon-korean` 폴더를 설치하고, 게임에 전달되는 시스템 언어를
+**Japanese**로 설정합니다. Android는 **moon 길게 누르기 → 추가 콘텐츠 → 설치 → 모드/치트**에서
+`moon-korean` 폴더를 선택하세요. PC는 **Open Mod Data Location**에 그 폴더를 넣습니다.
+새 Eden ZIP의 크기·해시는 [Eden 배포 원장](platforms/switch/eden_release_manifest.json)과
+Release의 `EDEN_SHA256SUMS.txt`에 기록합니다.
 
 ## 원본과 저장 데이터
 
